@@ -36,6 +36,17 @@ namespace MissionPlanner
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.timer2serial = new System.Windows.Forms.Timer(this.components);
+            this.tabOrientation = new System.Windows.Forms.TabPage();
+            this.horizontalProgressBar17 = new MissionPlanner.Controls.VerticalProgressBar();
+            this.verticalProgressBar7 = new MissionPlanner.Controls.VerticalProgressBar();
+            this.verticalProgressBar6 = new MissionPlanner.Controls.VerticalProgressBar();
+            this.verticalProgressBar5 = new MissionPlanner.Controls.VerticalProgressBar();
+            this.verticalProgressBar4 = new MissionPlanner.Controls.VerticalProgressBar();
+            this.progressBar2 = new MissionPlanner.Controls.VerticalProgressBar();
+            this.progressBar1 = new MissionPlanner.Controls.VerticalProgressBar();
+            this.verticalProgressBar3 = new MissionPlanner.Controls.VerticalProgressBar();
+            this.verticalProgressBar2 = new MissionPlanner.Controls.VerticalProgressBar();
+            this.verticalProgressBar1 = new MissionPlanner.Controls.VerticalProgressBar();
             this.tabRadio = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -69,22 +80,11 @@ namespace MissionPlanner
             this.zg1 = new ZedGraph.ZedGraphControl();
             this.Gpitch = new AGaugeApp.AGauge();
             this.Groll = new AGaugeApp.AGauge();
-            this.tabOrientation = new System.Windows.Forms.TabPage();
-            this.horizontalProgressBar17 = new MissionPlanner.Controls.VerticalProgressBar();
-            this.verticalProgressBar7 = new MissionPlanner.Controls.VerticalProgressBar();
-            this.verticalProgressBar6 = new MissionPlanner.Controls.VerticalProgressBar();
-            this.verticalProgressBar5 = new MissionPlanner.Controls.VerticalProgressBar();
-            this.verticalProgressBar4 = new MissionPlanner.Controls.VerticalProgressBar();
-            this.progressBar2 = new MissionPlanner.Controls.VerticalProgressBar();
-            this.progressBar1 = new MissionPlanner.Controls.VerticalProgressBar();
-            this.verticalProgressBar3 = new MissionPlanner.Controls.VerticalProgressBar();
-            this.verticalProgressBar2 = new MissionPlanner.Controls.VerticalProgressBar();
-            this.verticalProgressBar1 = new MissionPlanner.Controls.VerticalProgressBar();
             this.tabControl = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
+            this.tabOrientation.SuspendLayout();
             this.tabRadio.SuspendLayout();
             this.tabRawSensor.SuspendLayout();
-            this.tabOrientation.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,12 +95,183 @@ namespace MissionPlanner
             // currentStateBindingSource
             // 
             this.currentStateBindingSource.DataSource = typeof(MissionPlanner.CurrentState);
+            this.currentStateBindingSource.CurrentChanged += new System.EventHandler(this.currentStateBindingSource_CurrentChanged);
             // 
             // timer2serial
             // 
             this.timer2serial.Enabled = true;
             this.timer2serial.Interval = 10;
             this.timer2serial.Tick += new System.EventHandler(this.timer2serial_Tick);
+            // 
+            // tabOrientation
+            // 
+            this.tabOrientation.Controls.Add(this.horizontalProgressBar17);
+            this.tabOrientation.Controls.Add(this.verticalProgressBar7);
+            this.tabOrientation.Controls.Add(this.verticalProgressBar6);
+            this.tabOrientation.Controls.Add(this.verticalProgressBar5);
+            this.tabOrientation.Controls.Add(this.verticalProgressBar4);
+            this.tabOrientation.Controls.Add(this.progressBar2);
+            this.tabOrientation.Controls.Add(this.progressBar1);
+            this.tabOrientation.Controls.Add(this.verticalProgressBar3);
+            this.tabOrientation.Controls.Add(this.verticalProgressBar2);
+            this.tabOrientation.Controls.Add(this.verticalProgressBar1);
+            resources.ApplyResources(this.tabOrientation, "tabOrientation");
+            this.tabOrientation.Name = "tabOrientation";
+            this.tabOrientation.UseVisualStyleBackColor = true;
+            // 
+            // horizontalProgressBar17
+            // 
+            this.horizontalProgressBar17.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "gz", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
+            this.horizontalProgressBar17.DrawLabel = true;
+            this.horizontalProgressBar17.Label = "Gyro Z";
+            resources.ApplyResources(this.horizontalProgressBar17, "horizontalProgressBar17");
+            this.horizontalProgressBar17.MarqueeAnimationSpeed = 1;
+            this.horizontalProgressBar17.Maximum = 4000;
+            this.horizontalProgressBar17.maxline = 0;
+            this.horizontalProgressBar17.Minimum = -4000;
+            this.horizontalProgressBar17.minline = 0;
+            this.horizontalProgressBar17.Name = "horizontalProgressBar17";
+            this.horizontalProgressBar17.Step = 1;
+            this.horizontalProgressBar17.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // verticalProgressBar7
+            // 
+            this.verticalProgressBar7.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch4out", true, System.Windows.Forms.DataSourceUpdateMode.Never, "1000"));
+            this.verticalProgressBar7.DrawLabel = true;
+            this.verticalProgressBar7.Label = "Motor 4";
+            resources.ApplyResources(this.verticalProgressBar7, "verticalProgressBar7");
+            this.verticalProgressBar7.MarqueeAnimationSpeed = 1;
+            this.verticalProgressBar7.Maximum = 2000;
+            this.verticalProgressBar7.maxline = 0;
+            this.verticalProgressBar7.Minimum = 1000;
+            this.verticalProgressBar7.minline = 0;
+            this.verticalProgressBar7.Name = "verticalProgressBar7";
+            this.verticalProgressBar7.Step = 1;
+            this.verticalProgressBar7.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.verticalProgressBar7.Value = 1500;
+            // 
+            // verticalProgressBar6
+            // 
+            this.verticalProgressBar6.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch3out", true, System.Windows.Forms.DataSourceUpdateMode.Never, "1000"));
+            this.verticalProgressBar6.DrawLabel = true;
+            this.verticalProgressBar6.Label = "Motor 3";
+            resources.ApplyResources(this.verticalProgressBar6, "verticalProgressBar6");
+            this.verticalProgressBar6.MarqueeAnimationSpeed = 1;
+            this.verticalProgressBar6.Maximum = 2000;
+            this.verticalProgressBar6.maxline = 0;
+            this.verticalProgressBar6.Minimum = 1000;
+            this.verticalProgressBar6.minline = 0;
+            this.verticalProgressBar6.Name = "verticalProgressBar6";
+            this.verticalProgressBar6.Step = 1;
+            this.verticalProgressBar6.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.verticalProgressBar6.Value = 1500;
+            // 
+            // verticalProgressBar5
+            // 
+            this.verticalProgressBar5.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch2out", true, System.Windows.Forms.DataSourceUpdateMode.Never, "1000"));
+            this.verticalProgressBar5.DrawLabel = true;
+            this.verticalProgressBar5.Label = "Motor 2";
+            resources.ApplyResources(this.verticalProgressBar5, "verticalProgressBar5");
+            this.verticalProgressBar5.MarqueeAnimationSpeed = 1;
+            this.verticalProgressBar5.Maximum = 2000;
+            this.verticalProgressBar5.maxline = 0;
+            this.verticalProgressBar5.Minimum = 1000;
+            this.verticalProgressBar5.minline = 0;
+            this.verticalProgressBar5.Name = "verticalProgressBar5";
+            this.verticalProgressBar5.Step = 1;
+            this.verticalProgressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.verticalProgressBar5.Value = 1500;
+            // 
+            // verticalProgressBar4
+            // 
+            this.verticalProgressBar4.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch1out", true, System.Windows.Forms.DataSourceUpdateMode.Never, "1000"));
+            this.verticalProgressBar4.DrawLabel = true;
+            this.verticalProgressBar4.Label = "Motor 1";
+            resources.ApplyResources(this.verticalProgressBar4, "verticalProgressBar4");
+            this.verticalProgressBar4.MarqueeAnimationSpeed = 1;
+            this.verticalProgressBar4.Maximum = 2000;
+            this.verticalProgressBar4.maxline = 0;
+            this.verticalProgressBar4.Minimum = 1000;
+            this.verticalProgressBar4.minline = 0;
+            this.verticalProgressBar4.Name = "verticalProgressBar4";
+            this.verticalProgressBar4.Step = 1;
+            this.verticalProgressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.verticalProgressBar4.Value = 1500;
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "gx", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
+            this.progressBar2.DrawLabel = true;
+            this.progressBar2.Label = "Gyro X";
+            resources.ApplyResources(this.progressBar2, "progressBar2");
+            this.progressBar2.MarqueeAnimationSpeed = 1;
+            this.progressBar2.Maximum = 4000;
+            this.progressBar2.maxline = 0;
+            this.progressBar2.Minimum = -4000;
+            this.progressBar2.minline = 0;
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Step = 1;
+            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ax", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
+            this.progressBar1.DrawLabel = true;
+            this.progressBar1.Label = "Accel X";
+            resources.ApplyResources(this.progressBar1, "progressBar1");
+            this.progressBar1.MarqueeAnimationSpeed = 1;
+            this.progressBar1.Maximum = 1200;
+            this.progressBar1.maxline = 0;
+            this.progressBar1.Minimum = -1200;
+            this.progressBar1.minline = 0;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Step = 1;
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // verticalProgressBar3
+            // 
+            this.verticalProgressBar3.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "gy", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
+            this.verticalProgressBar3.DrawLabel = true;
+            this.verticalProgressBar3.Label = "Gyro Y";
+            resources.ApplyResources(this.verticalProgressBar3, "verticalProgressBar3");
+            this.verticalProgressBar3.MarqueeAnimationSpeed = 1;
+            this.verticalProgressBar3.Maximum = 4000;
+            this.verticalProgressBar3.maxline = 0;
+            this.verticalProgressBar3.Minimum = -4000;
+            this.verticalProgressBar3.minline = 0;
+            this.verticalProgressBar3.Name = "verticalProgressBar3";
+            this.verticalProgressBar3.Step = 1;
+            this.verticalProgressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // verticalProgressBar2
+            // 
+            this.verticalProgressBar2.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ay", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
+            this.verticalProgressBar2.DrawLabel = true;
+            this.verticalProgressBar2.Label = "Accel Y";
+            resources.ApplyResources(this.verticalProgressBar2, "verticalProgressBar2");
+            this.verticalProgressBar2.MarqueeAnimationSpeed = 1;
+            this.verticalProgressBar2.Maximum = 1200;
+            this.verticalProgressBar2.maxline = 0;
+            this.verticalProgressBar2.Minimum = -1200;
+            this.verticalProgressBar2.minline = 0;
+            this.verticalProgressBar2.Name = "verticalProgressBar2";
+            this.verticalProgressBar2.Step = 1;
+            this.verticalProgressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            // 
+            // verticalProgressBar1
+            // 
+            this.verticalProgressBar1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "az", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
+            this.verticalProgressBar1.DrawLabel = true;
+            this.verticalProgressBar1.Label = "Accel Z";
+            resources.ApplyResources(this.verticalProgressBar1, "verticalProgressBar1");
+            this.verticalProgressBar1.MarqueeAnimationSpeed = 1;
+            this.verticalProgressBar1.Maximum = 1200;
+            this.verticalProgressBar1.maxline = 0;
+            this.verticalProgressBar1.Minimum = -1200;
+            this.verticalProgressBar1.minline = 0;
+            this.verticalProgressBar1.Name = "verticalProgressBar1";
+            this.verticalProgressBar1.Step = 1;
+            this.verticalProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             // 
             // tabRadio
             // 
@@ -139,8 +310,9 @@ namespace MissionPlanner
             // horizontalProgressBar9
             // 
             this.horizontalProgressBar9.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch8out", true));
-            this.horizontalProgressBar9.Label = "Radio 8";
+            this.horizontalProgressBar9.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar9, "horizontalProgressBar9");
+            this.horizontalProgressBar9.Label = "Radio 8";
             this.horizontalProgressBar9.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar9.Maximum = 2000;
             this.horizontalProgressBar9.maxline = 0;
@@ -153,8 +325,9 @@ namespace MissionPlanner
             // horizontalProgressBar10
             // 
             this.horizontalProgressBar10.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch7out", true));
-            this.horizontalProgressBar10.Label = "Radio 7";
+            this.horizontalProgressBar10.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar10, "horizontalProgressBar10");
+            this.horizontalProgressBar10.Label = "Radio 7";
             this.horizontalProgressBar10.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar10.Maximum = 2000;
             this.horizontalProgressBar10.maxline = 0;
@@ -167,8 +340,9 @@ namespace MissionPlanner
             // horizontalProgressBar11
             // 
             this.horizontalProgressBar11.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch6out", true));
-            this.horizontalProgressBar11.Label = "Radio 6";
+            this.horizontalProgressBar11.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar11, "horizontalProgressBar11");
+            this.horizontalProgressBar11.Label = "Radio 6";
             this.horizontalProgressBar11.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar11.Maximum = 2000;
             this.horizontalProgressBar11.maxline = 0;
@@ -181,8 +355,9 @@ namespace MissionPlanner
             // horizontalProgressBar12
             // 
             this.horizontalProgressBar12.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch5out", true));
-            this.horizontalProgressBar12.Label = "Radio 5";
+            this.horizontalProgressBar12.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar12, "horizontalProgressBar12");
+            this.horizontalProgressBar12.Label = "Radio 5";
             this.horizontalProgressBar12.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar12.Maximum = 2000;
             this.horizontalProgressBar12.maxline = 0;
@@ -195,8 +370,9 @@ namespace MissionPlanner
             // horizontalProgressBar13
             // 
             this.horizontalProgressBar13.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch4out", true));
-            this.horizontalProgressBar13.Label = "Radio 4";
+            this.horizontalProgressBar13.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar13, "horizontalProgressBar13");
+            this.horizontalProgressBar13.Label = "Radio 4";
             this.horizontalProgressBar13.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar13.Maximum = 2000;
             this.horizontalProgressBar13.maxline = 0;
@@ -209,8 +385,9 @@ namespace MissionPlanner
             // horizontalProgressBar14
             // 
             this.horizontalProgressBar14.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch3out", true));
-            this.horizontalProgressBar14.Label = "Radio 3";
+            this.horizontalProgressBar14.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar14, "horizontalProgressBar14");
+            this.horizontalProgressBar14.Label = "Radio 3";
             this.horizontalProgressBar14.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar14.Maximum = 2000;
             this.horizontalProgressBar14.maxline = 0;
@@ -223,8 +400,9 @@ namespace MissionPlanner
             // horizontalProgressBar15
             // 
             this.horizontalProgressBar15.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch1out", true));
-            this.horizontalProgressBar15.Label = "Radio 1";
+            this.horizontalProgressBar15.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar15, "horizontalProgressBar15");
+            this.horizontalProgressBar15.Label = "Radio 1";
             this.horizontalProgressBar15.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar15.Maximum = 2000;
             this.horizontalProgressBar15.maxline = 0;
@@ -237,8 +415,9 @@ namespace MissionPlanner
             // horizontalProgressBar16
             // 
             this.horizontalProgressBar16.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch2out", true));
-            this.horizontalProgressBar16.Label = "Radio 2";
+            this.horizontalProgressBar16.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar16, "horizontalProgressBar16");
+            this.horizontalProgressBar16.Label = "Radio 2";
             this.horizontalProgressBar16.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar16.Maximum = 2000;
             this.horizontalProgressBar16.maxline = 0;
@@ -251,8 +430,9 @@ namespace MissionPlanner
             // horizontalProgressBar8
             // 
             this.horizontalProgressBar8.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch8in", true));
-            this.horizontalProgressBar8.Label = "Radio 8";
+            this.horizontalProgressBar8.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar8, "horizontalProgressBar8");
+            this.horizontalProgressBar8.Label = "Radio 8";
             this.horizontalProgressBar8.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar8.Maximum = 2000;
             this.horizontalProgressBar8.maxline = 0;
@@ -265,8 +445,9 @@ namespace MissionPlanner
             // horizontalProgressBar7
             // 
             this.horizontalProgressBar7.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch7in", true));
-            this.horizontalProgressBar7.Label = "Radio 7";
+            this.horizontalProgressBar7.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar7, "horizontalProgressBar7");
+            this.horizontalProgressBar7.Label = "Radio 7";
             this.horizontalProgressBar7.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar7.Maximum = 2000;
             this.horizontalProgressBar7.maxline = 0;
@@ -279,8 +460,9 @@ namespace MissionPlanner
             // horizontalProgressBar6
             // 
             this.horizontalProgressBar6.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch6in", true));
-            this.horizontalProgressBar6.Label = "Radio 6";
+            this.horizontalProgressBar6.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar6, "horizontalProgressBar6");
+            this.horizontalProgressBar6.Label = "Radio 6";
             this.horizontalProgressBar6.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar6.Maximum = 2000;
             this.horizontalProgressBar6.maxline = 0;
@@ -293,8 +475,9 @@ namespace MissionPlanner
             // horizontalProgressBar5
             // 
             this.horizontalProgressBar5.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch5in", true));
-            this.horizontalProgressBar5.Label = "Radio 5";
+            this.horizontalProgressBar5.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar5, "horizontalProgressBar5");
+            this.horizontalProgressBar5.Label = "Radio 5";
             this.horizontalProgressBar5.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar5.Maximum = 2000;
             this.horizontalProgressBar5.maxline = 0;
@@ -307,8 +490,9 @@ namespace MissionPlanner
             // horizontalProgressBar4
             // 
             this.horizontalProgressBar4.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch4in", true));
-            this.horizontalProgressBar4.Label = "Radio 4";
+            this.horizontalProgressBar4.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar4, "horizontalProgressBar4");
+            this.horizontalProgressBar4.Label = "Radio 4";
             this.horizontalProgressBar4.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar4.Maximum = 2000;
             this.horizontalProgressBar4.maxline = 0;
@@ -321,8 +505,9 @@ namespace MissionPlanner
             // horizontalProgressBar3
             // 
             this.horizontalProgressBar3.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch3in", true));
-            this.horizontalProgressBar3.Label = "Radio 3";
+            this.horizontalProgressBar3.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar3, "horizontalProgressBar3");
+            this.horizontalProgressBar3.Label = "Radio 3";
             this.horizontalProgressBar3.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar3.Maximum = 2000;
             this.horizontalProgressBar3.maxline = 0;
@@ -335,8 +520,9 @@ namespace MissionPlanner
             // horizontalProgressBar2
             // 
             this.horizontalProgressBar2.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch1in", true));
-            this.horizontalProgressBar2.Label = "Radio 1";
+            this.horizontalProgressBar2.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar2, "horizontalProgressBar2");
+            this.horizontalProgressBar2.Label = "Radio 1";
             this.horizontalProgressBar2.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar2.Maximum = 2000;
             this.horizontalProgressBar2.maxline = 0;
@@ -349,8 +535,9 @@ namespace MissionPlanner
             // horizontalProgressBar1
             // 
             this.horizontalProgressBar1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch2in", true));
-            this.horizontalProgressBar1.Label = "Radio 2";
+            this.horizontalProgressBar1.DrawLabel = true;
             resources.ApplyResources(this.horizontalProgressBar1, "horizontalProgressBar1");
+            this.horizontalProgressBar1.Label = "Radio 2";
             this.horizontalProgressBar1.MarqueeAnimationSpeed = 1;
             this.horizontalProgressBar1.Maximum = 2000;
             this.horizontalProgressBar1.maxline = 0;
@@ -748,6 +935,7 @@ namespace MissionPlanner
             this.Gpitch.Value1 = 0F;
             this.Gpitch.Value2 = 0F;
             this.Gpitch.Value3 = 0F;
+            this.Gpitch.ValueInRangeChanged += new AGaugeApp.AGauge.ValueInRangeChangedDelegate(this.Gpitch_ValueInRangeChanged);
             // 
             // Groll
             // 
@@ -892,166 +1080,6 @@ namespace MissionPlanner
             this.Groll.Value2 = 0F;
             this.Groll.Value3 = 0F;
             // 
-            // tabOrientation
-            // 
-            this.tabOrientation.Controls.Add(this.horizontalProgressBar17);
-            this.tabOrientation.Controls.Add(this.verticalProgressBar7);
-            this.tabOrientation.Controls.Add(this.verticalProgressBar6);
-            this.tabOrientation.Controls.Add(this.verticalProgressBar5);
-            this.tabOrientation.Controls.Add(this.verticalProgressBar4);
-            this.tabOrientation.Controls.Add(this.progressBar2);
-            this.tabOrientation.Controls.Add(this.progressBar1);
-            this.tabOrientation.Controls.Add(this.verticalProgressBar3);
-            this.tabOrientation.Controls.Add(this.verticalProgressBar2);
-            this.tabOrientation.Controls.Add(this.verticalProgressBar1);
-            resources.ApplyResources(this.tabOrientation, "tabOrientation");
-            this.tabOrientation.Name = "tabOrientation";
-            this.tabOrientation.UseVisualStyleBackColor = true;
-            // 
-            // horizontalProgressBar17
-            // 
-            this.horizontalProgressBar17.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "gz", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
-            this.horizontalProgressBar17.Label = "Gyro Z";
-            resources.ApplyResources(this.horizontalProgressBar17, "horizontalProgressBar17");
-            this.horizontalProgressBar17.MarqueeAnimationSpeed = 1;
-            this.horizontalProgressBar17.Maximum = 4000;
-            this.horizontalProgressBar17.maxline = 0;
-            this.horizontalProgressBar17.Minimum = -4000;
-            this.horizontalProgressBar17.minline = 0;
-            this.horizontalProgressBar17.Name = "horizontalProgressBar17";
-            this.horizontalProgressBar17.Step = 1;
-            this.horizontalProgressBar17.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            // 
-            // verticalProgressBar7
-            // 
-            this.verticalProgressBar7.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch4out", true, System.Windows.Forms.DataSourceUpdateMode.Never, "1000"));
-            this.verticalProgressBar7.Label = "Motor 4";
-            resources.ApplyResources(this.verticalProgressBar7, "verticalProgressBar7");
-            this.verticalProgressBar7.MarqueeAnimationSpeed = 1;
-            this.verticalProgressBar7.Maximum = 2000;
-            this.verticalProgressBar7.maxline = 0;
-            this.verticalProgressBar7.Minimum = 1000;
-            this.verticalProgressBar7.minline = 0;
-            this.verticalProgressBar7.Name = "verticalProgressBar7";
-            this.verticalProgressBar7.Step = 1;
-            this.verticalProgressBar7.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.verticalProgressBar7.Value = 1500;
-            // 
-            // verticalProgressBar6
-            // 
-            this.verticalProgressBar6.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch3out", true, System.Windows.Forms.DataSourceUpdateMode.Never, "1000"));
-            this.verticalProgressBar6.Label = "Motor 3";
-            resources.ApplyResources(this.verticalProgressBar6, "verticalProgressBar6");
-            this.verticalProgressBar6.MarqueeAnimationSpeed = 1;
-            this.verticalProgressBar6.Maximum = 2000;
-            this.verticalProgressBar6.maxline = 0;
-            this.verticalProgressBar6.Minimum = 1000;
-            this.verticalProgressBar6.minline = 0;
-            this.verticalProgressBar6.Name = "verticalProgressBar6";
-            this.verticalProgressBar6.Step = 1;
-            this.verticalProgressBar6.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.verticalProgressBar6.Value = 1500;
-            // 
-            // verticalProgressBar5
-            // 
-            this.verticalProgressBar5.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch2out", true, System.Windows.Forms.DataSourceUpdateMode.Never, "1000"));
-            this.verticalProgressBar5.Label = "Motor 2";
-            resources.ApplyResources(this.verticalProgressBar5, "verticalProgressBar5");
-            this.verticalProgressBar5.MarqueeAnimationSpeed = 1;
-            this.verticalProgressBar5.Maximum = 2000;
-            this.verticalProgressBar5.maxline = 0;
-            this.verticalProgressBar5.Minimum = 1000;
-            this.verticalProgressBar5.minline = 0;
-            this.verticalProgressBar5.Name = "verticalProgressBar5";
-            this.verticalProgressBar5.Step = 1;
-            this.verticalProgressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.verticalProgressBar5.Value = 1500;
-            // 
-            // verticalProgressBar4
-            // 
-            this.verticalProgressBar4.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ch1out", true, System.Windows.Forms.DataSourceUpdateMode.Never, "1000"));
-            this.verticalProgressBar4.Label = "Motor 1";
-            resources.ApplyResources(this.verticalProgressBar4, "verticalProgressBar4");
-            this.verticalProgressBar4.MarqueeAnimationSpeed = 1;
-            this.verticalProgressBar4.Maximum = 2000;
-            this.verticalProgressBar4.maxline = 0;
-            this.verticalProgressBar4.Minimum = 1000;
-            this.verticalProgressBar4.minline = 0;
-            this.verticalProgressBar4.Name = "verticalProgressBar4";
-            this.verticalProgressBar4.Step = 1;
-            this.verticalProgressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.verticalProgressBar4.Value = 1500;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "gx", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
-            this.progressBar2.Label = "Gyro X";
-            resources.ApplyResources(this.progressBar2, "progressBar2");
-            this.progressBar2.MarqueeAnimationSpeed = 1;
-            this.progressBar2.Maximum = 4000;
-            this.progressBar2.maxline = 0;
-            this.progressBar2.Minimum = -4000;
-            this.progressBar2.minline = 0;
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Step = 1;
-            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ax", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
-            this.progressBar1.Label = "Accel X";
-            resources.ApplyResources(this.progressBar1, "progressBar1");
-            this.progressBar1.MarqueeAnimationSpeed = 1;
-            this.progressBar1.Maximum = 1200;
-            this.progressBar1.maxline = 0;
-            this.progressBar1.Minimum = -1200;
-            this.progressBar1.minline = 0;
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Step = 1;
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            // 
-            // verticalProgressBar3
-            // 
-            this.verticalProgressBar3.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "gy", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
-            this.verticalProgressBar3.Label = "Gyro Y";
-            resources.ApplyResources(this.verticalProgressBar3, "verticalProgressBar3");
-            this.verticalProgressBar3.MarqueeAnimationSpeed = 1;
-            this.verticalProgressBar3.Maximum = 4000;
-            this.verticalProgressBar3.maxline = 0;
-            this.verticalProgressBar3.Minimum = -4000;
-            this.verticalProgressBar3.minline = 0;
-            this.verticalProgressBar3.Name = "verticalProgressBar3";
-            this.verticalProgressBar3.Step = 1;
-            this.verticalProgressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            // 
-            // verticalProgressBar2
-            // 
-            this.verticalProgressBar2.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "ay", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
-            this.verticalProgressBar2.Label = "Accel Y";
-            resources.ApplyResources(this.verticalProgressBar2, "verticalProgressBar2");
-            this.verticalProgressBar2.MarqueeAnimationSpeed = 1;
-            this.verticalProgressBar2.Maximum = 1200;
-            this.verticalProgressBar2.maxline = 0;
-            this.verticalProgressBar2.Minimum = -1200;
-            this.verticalProgressBar2.minline = 0;
-            this.verticalProgressBar2.Name = "verticalProgressBar2";
-            this.verticalProgressBar2.Step = 1;
-            this.verticalProgressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            // 
-            // verticalProgressBar1
-            // 
-            this.verticalProgressBar1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.currentStateBindingSource, "az", true, System.Windows.Forms.DataSourceUpdateMode.Never, "0"));
-            this.verticalProgressBar1.Label = "Accel Z";
-            resources.ApplyResources(this.verticalProgressBar1, "verticalProgressBar1");
-            this.verticalProgressBar1.MarqueeAnimationSpeed = 1;
-            this.verticalProgressBar1.Maximum = 1200;
-            this.verticalProgressBar1.maxline = 0;
-            this.verticalProgressBar1.Minimum = -1200;
-            this.verticalProgressBar1.minline = 0;
-            this.verticalProgressBar1.Name = "verticalProgressBar1";
-            this.verticalProgressBar1.Step = 1;
-            this.verticalProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            // 
             // tabControl
             // 
             resources.ApplyResources(this.tabControl, "tabControl");
@@ -1063,18 +1091,18 @@ namespace MissionPlanner
             // 
             // RAW_Sensor
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.tabControl);
             this.Name = "RAW_Sensor";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ACM_Setup_FormClosed);
             this.Load += new System.EventHandler(this.ACM_Setup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
+            this.tabOrientation.ResumeLayout(false);
             this.tabRadio.ResumeLayout(false);
             this.tabRadio.PerformLayout();
             this.tabRawSensor.ResumeLayout(false);
             this.tabRawSensor.PerformLayout();
-            this.tabOrientation.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1085,6 +1113,17 @@ namespace MissionPlanner
         private System.Windows.Forms.BindingSource currentStateBindingSource;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2serial;
+        private System.Windows.Forms.TabPage tabOrientation;
+        private VerticalProgressBar horizontalProgressBar17;
+        private VerticalProgressBar verticalProgressBar7;
+        private VerticalProgressBar verticalProgressBar6;
+        private VerticalProgressBar verticalProgressBar5;
+        private VerticalProgressBar verticalProgressBar4;
+        private VerticalProgressBar progressBar2;
+        private VerticalProgressBar progressBar1;
+        private VerticalProgressBar verticalProgressBar3;
+        private VerticalProgressBar verticalProgressBar2;
+        private VerticalProgressBar verticalProgressBar1;
         private System.Windows.Forms.TabPage tabRadio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -1105,6 +1144,7 @@ namespace MissionPlanner
         private HorizontalProgressBar horizontalProgressBar2;
         private HorizontalProgressBar horizontalProgressBar1;
         private System.Windows.Forms.TabPage tabRawSensor;
+        private MyButton BUT_savecsv;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox CMB_rawupdaterate;
         private AGaugeApp.AGauge aGauge1;
@@ -1117,19 +1157,6 @@ namespace MissionPlanner
         private ZedGraph.ZedGraphControl zg1;
         private AGaugeApp.AGauge Gpitch;
         private AGaugeApp.AGauge Groll;
-        private System.Windows.Forms.TabPage tabOrientation;
-        private VerticalProgressBar horizontalProgressBar17;
-        private VerticalProgressBar verticalProgressBar7;
-        private VerticalProgressBar verticalProgressBar6;
-        private VerticalProgressBar verticalProgressBar5;
-        private VerticalProgressBar verticalProgressBar4;
-        private VerticalProgressBar progressBar2;
-        private VerticalProgressBar progressBar1;
-        private VerticalProgressBar verticalProgressBar3;
-        private VerticalProgressBar verticalProgressBar2;
-        private VerticalProgressBar verticalProgressBar1;
         private System.Windows.Forms.TabControl tabControl;
-        private Controls.MyButton BUT_savecsv;
-
     }
 }

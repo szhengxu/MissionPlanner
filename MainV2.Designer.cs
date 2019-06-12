@@ -168,6 +168,7 @@ namespace MissionPlanner
             // 
             // MenuSimulation
             // 
+            this.MenuSimulation.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None;
             resources.ApplyResources(this.MenuSimulation, "MenuSimulation");
             this.MenuSimulation.ForeColor = System.Drawing.Color.White;
             this.MenuSimulation.Margin = new System.Windows.Forms.Padding(0);
@@ -177,6 +178,7 @@ namespace MissionPlanner
             // 
             // MenuTerminal
             // 
+            this.MenuTerminal.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None;
             resources.ApplyResources(this.MenuTerminal, "MenuTerminal");
             this.MenuTerminal.ForeColor = System.Drawing.Color.White;
             this.MenuTerminal.Margin = new System.Windows.Forms.Padding(0);
@@ -186,6 +188,7 @@ namespace MissionPlanner
             // 
             // MenuHelp
             // 
+            this.MenuHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None;
             resources.ApplyResources(this.MenuHelp, "MenuHelp");
             this.MenuHelp.ForeColor = System.Drawing.Color.White;
             this.MenuHelp.Margin = new System.Windows.Forms.Padding(0);
@@ -195,6 +198,7 @@ namespace MissionPlanner
             // 
             // MenuDonate
             // 
+            this.MenuDonate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None;
             resources.ApplyResources(this.MenuDonate, "MenuDonate");
             this.MenuDonate.ForeColor = System.Drawing.Color.White;
             this.MenuDonate.Image = global::MissionPlanner.Properties.Resources.donate;
@@ -227,7 +231,7 @@ namespace MissionPlanner
             // 
             this.MenuArduPilot.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.MenuArduPilot.BackColor = System.Drawing.Color.Transparent;
-            this.MenuArduPilot.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MenuArduPilot.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None;
             resources.ApplyResources(this.MenuArduPilot, "MenuArduPilot");
             this.MenuArduPilot.ForeColor = System.Drawing.Color.White;
             this.MenuArduPilot.Image = global::MissionPlanner.Properties.Resources._0d92fed790a3a70170e61a86db103f399a595c70;

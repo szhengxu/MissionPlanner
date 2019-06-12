@@ -3187,6 +3187,13 @@ Please check the following
             setMode(MAV.sysid, MAV.compid, modein);
         }
 
+        public void send_data96(mavlink_data96_t data)
+        {
+            generatePacket((byte)(byte)MAVLINK_MSG_ID.DATA96, data);
+            Thread.Sleep(10);
+            generatePacket((byte)(byte)MAVLINK_MSG_ID.DATA96, data);
+        }
+
         public void setMode(byte sysid, byte compid, string modein)
         {
             mavlink_set_mode_t mode = new mavlink_set_mode_t();

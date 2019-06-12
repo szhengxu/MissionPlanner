@@ -35,6 +35,7 @@ namespace MissionPlanner
         public static string SpeedUnit = "";
         public static float multiplieralt = 1;
         public static string AltUnit = "";
+        public static int f10 = 0, f11 = 0, f12 = 0, f13 = 0, f14 = 0, f15 = 0, f16 = 0, f17 = 0, f18 = 0, f19 = 0, f20 = 0;
 
         public static double toDistDisplayUnit(double input)
         {
@@ -55,6 +56,12 @@ namespace MissionPlanner
         {
             return input/multiplierspeed;
         }
+
+        [DisplayText("F1024")]
+        public int f1024 = 0;
+
+        [DisplayText("last_count")]
+        public int last_count = 0;
 
         // orientation - rads
         [DisplayText("Roll (deg)")]
@@ -258,6 +265,11 @@ namespace MissionPlanner
         // accel
         [DisplayText("Accel X")]
         public float ax { get; set; }
+
+        // accel
+        [DisplayText("DATA 1024")]
+        //public byte[] pips { get; set; }
+        public byte[] pips = new byte[1024];
 
         [DisplayText("Accel Y")]
         public float ay { get; set; }
@@ -2549,6 +2561,37 @@ namespace MissionPlanner
 
                         //MAVLink.packets[(byte)MAVLink.MSG_NAMES.RAW_IMU);
                     }
+
+                    //UESTC Start
+                    mavLinkMessage = MAV.getPacket((uint)MAVLink.MAVLINK_MSG_ID.DATA96);
+                    if (mavLinkMessage != null)
+                    {
+                        var data96 = mavLinkMessage.ToStructure<MAVLink.mavlink_data96_t>();
+
+                        int count = data96.type - 10;
+                        if (data96.type >=10 && data96.type <20)
+                        {
+                            for (int i = 0; i < 96; i++)
+                            {
+                                pips[i + count * 96] = data96.data[i];
+                            }
+                            f1024 = 0;
+                        }
+                        else if(data96.type == 20)
+                        {
+                            for (int i = 0; i < 64; i++)
+                            {
+                                pips[i + count * 96] = data96.data[i];
+                            }
+
+                            if (last_count != data96.data[80])
+                            {
+                                f1024 = 1;
+                                last_count = data96.data[80];
+                            }
+                        }
+                    }
+                    //UESTC End
 
                     mavLinkMessage = MAV.getPacket((uint) MAVLink.MAVLINK_MSG_ID.SCALED_IMU);
                     if (mavLinkMessage != null)

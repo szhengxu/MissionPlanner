@@ -4649,6 +4649,13 @@ namespace MissionPlanner.GCSViews
             MainV2.comPort.setMountConfigure(MAVLink.MAV_MOUNT_MODE.MAVLINK_TARGETING, false, false, false);
             MainV2.comPort.setMountControl((float)trackBarPitch.Value * 100.0f, (float)trackBarRoll.Value * 100.0f, (float)trackBarYaw.Value * 100.0f, false);
         }
+
+        private void myButton4_Click(object sender, EventArgs e)
+        {
+            Form temp = new pips_sensor();
+            ThemeManager.ApplyThemeTo(temp);
+            temp.Show();
+        }
     }
 }
  

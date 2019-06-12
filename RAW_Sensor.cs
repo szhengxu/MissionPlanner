@@ -22,6 +22,7 @@ namespace MissionPlanner
         RollingPointPairList list4 = new RollingPointPairList(10*50);
         RollingPointPairList list5 = new RollingPointPairList(10*50);
         RollingPointPairList list6 = new RollingPointPairList(10*50);
+        
         object thisLock = new object();
 
         int tickStart = 0;
@@ -303,6 +304,16 @@ namespace MissionPlanner
                     sw = new System.IO.StreamWriter(ofd.OpenFile());
                 }
             }
+        }
+
+        private void currentStateBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Gpitch_ValueInRangeChanged(object sender, AGauge.ValueInRangeChangedEventArgs e)
+        {
+
         }
     }
 }
