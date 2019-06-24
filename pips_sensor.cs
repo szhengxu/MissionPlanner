@@ -24,6 +24,7 @@ namespace MissionPlanner
 
         object thisLock = new object();
         int tickStart = 0;
+        bool update_plot = false;
 
 
         public pips_sensor()
@@ -78,7 +79,7 @@ namespace MissionPlanner
             myPane.Chart.Fill = new Fill(Color.White, Color.LightGray, 45.0f);
 
             // Sample at 500ms intervals
-            timer1.Interval = 500;
+            timer1.Interval = 200;
             timer1.Enabled = true;
             timer1.Start();
 
@@ -126,7 +127,7 @@ namespace MissionPlanner
             myPane.Chart.Fill = new Fill(Color.White, Color.LightGray, 45.0f);
 
             // Sample at 500ms intervals
-            timer1.Interval = 500;
+            timer1.Interval = 200;
             timer1.Enabled = true;
             timer1.Start();
 
@@ -163,6 +164,10 @@ namespace MissionPlanner
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (update_plot == false)
+            {
+                return;
+            }
             double time = (Environment.TickCount - tickStart) / 1000.0;
 
             // Make sure that the curvelist has at least one curve
@@ -214,12 +219,95 @@ namespace MissionPlanner
 
         Random random = new Random();
         int rx_count = 0;
+        public byte[] pips_now  = new byte[1024];
         public byte[] pips_last = new byte[1024];
+        byte ms50=0;
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (!MainV2.comPort.BaseStream.IsOpen && !MainV2.comPort.logreadmode)
                 return;
 
+            if (MainV2.comPort.MAV.cs.data10[0] == 1 &&
+                MainV2.comPort.MAV.cs.data11[0] == 1 &&
+                MainV2.comPort.MAV.cs.data12[0] == 1 &&
+                MainV2.comPort.MAV.cs.data13[0] == 1 &&
+                MainV2.comPort.MAV.cs.data14[0] == 1 &&
+                MainV2.comPort.MAV.cs.data15[0] == 1 &&
+                MainV2.comPort.MAV.cs.data16[0] == 1 &&
+                MainV2.comPort.MAV.cs.data17[0] == 1 &&
+                MainV2.comPort.MAV.cs.data18[0] == 1 &&
+                MainV2.comPort.MAV.cs.data19[0] == 1 &&
+                MainV2.comPort.MAV.cs.data20[0] == 1)
+            {
+                ms50++;
+            }
+            if(ms50>4)
+            {
+                ms50 = 0;
+                update_plot = true;
+                //test
+                MainV2.comPort.MAV.cs.data10[0] = 0;
+                MainV2.comPort.MAV.cs.data11[0] = 0;
+                MainV2.comPort.MAV.cs.data12[0] = 0;
+                MainV2.comPort.MAV.cs.data13[0] = 0;
+                MainV2.comPort.MAV.cs.data14[0] = 0;
+                MainV2.comPort.MAV.cs.data15[0] = 0;
+                MainV2.comPort.MAV.cs.data16[0] = 0;
+                MainV2.comPort.MAV.cs.data17[0] = 0;
+                MainV2.comPort.MAV.cs.data18[0] = 0;
+                MainV2.comPort.MAV.cs.data19[0] = 0;
+                MainV2.comPort.MAV.cs.data20[0] = 0;
+
+                rx_count++;
+                textBox1.AppendText(rx_count + "   ");
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data10, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data11, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data12, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data13, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data14, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data15, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data16, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data17, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data18, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data19, 1, 96));
+                textBox1.AppendText(System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.data20, 1, 64));
+                textBox1.AppendText("\r\n");
+
+                int now_count = 0;
+                Array.Copy(MainV2.comPort.MAV.cs.data10, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data11, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data12, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data13, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data14, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data15, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data16, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data17, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data18, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data19, 1, pips_now, now_count, 96); now_count += 96;
+                Array.Copy(MainV2.comPort.MAV.cs.data20, 1, pips_now, now_count, 64); now_count += 64;
+
+                //wirte log
+                if (sw != null && sw.BaseStream.CanWrite)
+                {
+                    //time__rx_count__1024个数据
+                    for (int i = 0; i < 1024; i++)
+                    {
+                        sw.WriteLine(string.Format("{0},{1},{2}", DateTime.Now.ToString(), rx_count, pips_now[i]));
+                    }
+                }
+
+                //plot
+                double time = (Environment.TickCount - tickStart) / 1000.0;
+                //list1.Add(time, MissionPlanner.MainV2.comPort.MAV.cs.ax);
+                for (int i = 0; i < 1024; i++)
+                {
+                    list_now.Add(i, pips_now[i]);
+                    list_last.Add(i, pips_last[i]);
+                }
+                Array.Copy(pips_now, 0, pips_last, 0, 1024);
+            }
+
+            /*
             if (MainV2.comPort.MAV.cs.f1024 == 1)
             {
                 //test
@@ -246,7 +334,7 @@ namespace MissionPlanner
                     list_last.Add(i, pips_last[i]);
                 }
                 Array.Copy(MissionPlanner.MainV2.comPort.MAV.cs.pips, 0, pips_last, 0, 1024);
-            }
+            }*/
         }
 
         private void myButton2_Click(object sender, EventArgs e)
@@ -414,6 +502,117 @@ namespace MissionPlanner
             data96.data[0] = 0;
             data96.type = 101;
             data96.len = 1;
+            MainV2.comPort.send_data96(data96);
+        }
+
+        private void myButton11_Click(object sender, EventArgs e)
+        {
+            MAVLink.mavlink_data96_t data96 = new MAVLink.mavlink_data96_t();
+            data96.data = new byte[96];
+            byte count = 0;
+
+            data96.data[count] = (byte)'#'; count++;
+            data96.data[count] = (byte)'Q'; count++;
+            data96.data[count] = (byte)'\n'; count++;
+
+            data96.type = 110;
+            data96.len = count;
+            MainV2.comPort.send_data96(data96);
+        }
+
+        private void myButton12_Click(object sender, EventArgs e)
+        {
+            MAVLink.mavlink_data96_t data96 = new MAVLink.mavlink_data96_t();
+            data96.data = new byte[96];
+            byte count = 0;
+
+            data96.data[count] = (byte)'#'; count++;
+            data96.data[count] = (byte)'O'; count++;
+            data96.data[count] = (byte)'\n'; count++;
+
+            data96.type = 110;
+            data96.len = count;
+            MainV2.comPort.send_data96(data96);
+        }
+
+        private void myButton13_Click(object sender, EventArgs e)
+        {
+            MAVLink.mavlink_data96_t data96 = new MAVLink.mavlink_data96_t();
+            data96.data = new byte[96];
+            byte count = 0;
+
+            data96.data[count] = (byte)'#'; count++;
+            data96.data[count] = (byte)'S'; count++;
+            data96.data[count] = (byte)'\n'; count++;
+
+            data96.type = 110;
+            data96.len = count;
+            MainV2.comPort.send_data96(data96);
+        }
+
+        private void myButton14_Click(object sender, EventArgs e)
+        {
+            MAVLink.mavlink_data96_t data96 = new MAVLink.mavlink_data96_t();
+            data96.data = new byte[96];
+            byte count = 0;
+
+            data96.data[count] = (byte)'#'; count++;
+            data96.data[count] = (byte)'D'; count++;
+
+            int time = comboBox4.SelectedIndex * 5 + 5;
+            byte time_b = 0;
+
+            time_b = (byte)((time % 1000) / 100);
+            if (time_b != 0)
+            {
+                data96.data[count] = (byte)(time_b + 0x30); count++;
+            }
+            time_b = (byte)((time % 100) / 10);
+            if (time_b != 0)
+            {
+                data96.data[count] = (byte)(time_b + 0x30); count++;
+            }
+            time_b = (byte)((time % 10) / 1);
+            if (time_b != 0)
+            {
+                data96.data[count] = (byte)(time_b + 0x30); count++;
+            }
+            data96.data[count] = (byte)'\n'; count++;
+
+            data96.type = 110;
+            data96.len = count;
+            MainV2.comPort.send_data96(data96);
+        }
+
+        private void myButton15_Click(object sender, EventArgs e)
+        {
+            MAVLink.mavlink_data96_t data96 = new MAVLink.mavlink_data96_t();
+            data96.data = new byte[96];
+            byte count = 0;
+
+            data96.data[count] = (byte)'#'; count++;
+            data96.data[count] = (byte)'M'; count++;
+            data96.data[count] = (byte)'1'; count++;
+            data96.data[count] = (byte)'\n'; count++;
+
+            data96.type = 110;
+            data96.len = count;
+            MainV2.comPort.send_data96(data96);
+        }
+
+        private void myButton16_Click(object sender, EventArgs e)
+        {
+            MAVLink.mavlink_data96_t data96 = new MAVLink.mavlink_data96_t();
+            data96.data = new byte[96];
+            byte count = 0;
+
+            data96.data[count] = (byte)'#'; count++;
+            data96.data[count] = (byte)'M'; count++;
+            data96.data[count] = (byte)'0'; count++;
+            data96.data[count] = (byte)'\n'; count++;
+
+            data96.type = 110;
+            data96.len = count;
             MainV2.comPort.send_data96(data96);
         }
     }

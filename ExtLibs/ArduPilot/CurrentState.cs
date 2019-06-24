@@ -35,7 +35,6 @@ namespace MissionPlanner
         public static string SpeedUnit = "";
         public static float multiplieralt = 1;
         public static string AltUnit = "";
-        public static int f10 = 0, f11 = 0, f12 = 0, f13 = 0, f14 = 0, f15 = 0, f16 = 0, f17 = 0, f18 = 0, f19 = 0, f20 = 0;
 
         public static double toDistDisplayUnit(double input)
         {
@@ -270,6 +269,62 @@ namespace MissionPlanner
         [DisplayText("DATA 1024")]
         //public byte[] pips { get; set; }
         public byte[] pips = new byte[1024];
+
+
+        // data96
+        [DisplayText("DATA 96_10")]
+        //public byte[] pips { get; set; }
+        public byte[] data10 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_11")]
+        //public byte[] pips { get; set; }
+        public byte[] data11 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_12")]
+        //public byte[] pips { get; set; }
+        public byte[] data12 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_13")]
+        //public byte[] pips { get; set; }
+        public byte[] data13 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_14")]
+        //public byte[] pips { get; set; }
+        public byte[] data14 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_15")]
+        //public byte[] pips { get; set; }
+        public byte[] data15 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_16")]
+        //public byte[] pips { get; set; }
+        public byte[] data16 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_17")]
+        //public byte[] pips { get; set; }
+        public byte[] data17 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_18")]
+        //public byte[] pips { get; set; }
+        public byte[] data18 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_19")]
+        //public byte[] pips { get; set; }
+        public byte[] data19 = new byte[97];
+
+        // data96
+        [DisplayText("DATA 96_20")]
+        //public byte[] pips { get; set; }
+        public byte[] data20 = new byte[65];
 
         [DisplayText("Accel Y")]
         public float ay { get; set; }
@@ -1545,7 +1600,7 @@ namespace MissionPlanner
         {
             lock (this)
             {
-                if (DateTime.Now > lastupdate.AddMilliseconds(50) || updatenow) // 20 hz
+                if (DateTime.Now > lastupdate.AddMilliseconds(4) || updatenow) // 250 hz
                 {
                     lastupdate = DateTime.Now;
 
@@ -2568,6 +2623,72 @@ namespace MissionPlanner
                     {
                         var data96 = mavLinkMessage.ToStructure<MAVLink.mavlink_data96_t>();
 
+                        if (data96.type == 10 && data10[0] == 0)
+                        {
+                            data10[0] = 1;
+                            Array.Copy(data96.data, 0, data10, 1, 96);
+                        }
+
+                        if (data96.type == 11 && data11[0] == 0)
+                        {
+                            data11[0] = 1;
+                            Array.Copy(data96.data, 0, data11, 1, 96);
+                        }
+
+                        if (data96.type == 12 && data12[0] == 0)
+                        {
+                            data12[0] = 1;
+                            Array.Copy(data96.data, 0, data12, 1, 96);
+                        }
+
+                        if (data96.type == 13 && data13[0] == 0)
+                        {
+                            data13[0] = 1;
+                            Array.Copy(data96.data, 0, data13, 1, 96);
+                        }
+
+                        if (data96.type == 14 && data14[0] == 0)
+                        {
+                            data14[0] = 1;
+                            Array.Copy(data96.data, 0, data14, 1, 96);
+                        }
+
+                        if (data96.type == 15 && data15[0] == 0)
+                        {
+                            data15[0] = 1;
+                            Array.Copy(data96.data, 0, data15, 1, 96);
+                        }
+
+                        if (data96.type == 16 && data16[0] == 0)
+                        {
+                            data16[0] = 1;
+                            Array.Copy(data96.data, 0, data16, 1, 96);
+                        }
+
+                        if (data96.type == 17 && data17[0] == 0)
+                        {
+                            data17[0] = 1;
+                            Array.Copy(data96.data, 0, data17, 1, 96);
+                        }
+
+                        if (data96.type == 18 && data18[0] == 0)
+                        {
+                            data18[0] = 1;
+                            Array.Copy(data96.data, 0, data18, 1, 96);
+                        }
+
+                        if (data96.type == 19 && data19[0] == 0)
+                        {
+                            data19[0] = 1;
+                            Array.Copy(data96.data, 0, data19, 1, 96);
+                        }
+
+                        if (data96.type == 20 && data20[0] == 0)
+                        {
+                            data20[0] = 1;
+                            Array.Copy(data96.data, 0, data20, 1, 64);
+                        }
+                        /*
                         int count = data96.type - 10;
                         if (data96.type >=10 && data96.type <20)
                         {
@@ -2589,7 +2710,7 @@ namespace MissionPlanner
                                 f1024 = 1;
                                 last_count = data96.data[80];
                             }
-                        }
+                        }*/
                     }
                     //UESTC End
 
