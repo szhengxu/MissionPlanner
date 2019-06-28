@@ -1210,6 +1210,8 @@ namespace MissionPlanner.Log
             }
         }
 
+        UInt16 last_num = 0, last_type = 0, count1024 = 2000;
+        UInt64 sd_time = 0;
         void GraphItem_GetList(string fieldname, string type, DFLog dflog, DataModifer dataModifier, bool left)
         {
             log.Info("GraphItem_GetList " + type + " " + fieldname);
@@ -1242,49 +1244,79 @@ namespace MissionPlanner.Log
                 {
                     try
                     {
-                        double value = double.Parse(item.items[col],
-                            System.Globalization.CultureInfo.InvariantCulture);
+                        double value = 0;
+                        UInt64 value64 = 0;
 
-                        // abandon realy bad data
-                        if (Math.Abs(value) > 9.15e8)
+                        if (item.items[0] == "PIPS" && col==3)
                         {
-                            a++;
-                            continue;
-                        }
-
-                        if (dataModifier.IsValid())
-                        {
-                            if ((a != 0) && Math.Abs(value - value_prev) > 1e5)
+                            UInt16 now_sum = 0, now_type = 0, data64;
+                            now_sum  = UInt16.Parse(item.items[2], System.Globalization.CultureInfo.InvariantCulture);
+                            now_type = UInt16.Parse(item.items[3], System.Globalization.CultureInfo.InvariantCulture);
+                            if (last_num != now_sum)
                             {
-                                // there is a glitch in the data, reject it by replacing it with the previous value
-                                value = value_prev;
+                                count1024 = 0;
+                                last_num = now_sum;
+                                sd_time = UInt64.Parse(item.items[1], System.Globalization.CultureInfo.InvariantCulture)/1000000;
+                                //sd_time = (UInt64)b;
                             }
-                            value_prev = value;
-
-                            if (dataModifier.doOffsetFirst)
+                            for (UInt16 j = 4; j < 16; j++)
                             {
-                                value += dataModifier.offset;
-                                value *= dataModifier.scalar;
+                                value64 = UInt64.Parse(item.items[j], System.Globalization.CultureInfo.InvariantCulture);
+                                for (UInt16 i = 0; i < 4; i++)
+                                {
+                                    data64 = (UInt16)((value64 >> i * 16) & 0xFFFF);
+                                    list1.Add((double)(now_sum+15)+ ((double)count1024)/10000, (double)data64);
+                                    //list1.Add((double)(sd_time) + ((double)count1024) / 10000, (double)data64);
+                                    count1024++;
+                                }
+                            }
+
+                        }
+                        else if(item.items[0] != "PIPS")
+                        {
+                            value = double.Parse(item.items[col],
+                                System.Globalization.CultureInfo.InvariantCulture);
+                            // abandon realy bad data
+                            if (Math.Abs(value) > 9.15e8)
+                            {
+                                a++;
+                                continue;
+                            }
+
+                            if (dataModifier.IsValid())
+                            {
+                                if ((a != 0) && Math.Abs(value - value_prev) > 1e5)
+                                {
+                                    // there is a glitch in the data, reject it by replacing it with the previous value
+                                    value = value_prev;
+                                }
+                                value_prev = value;
+
+                                if (dataModifier.doOffsetFirst)
+                                {
+                                    value += dataModifier.offset;
+                                    value *= dataModifier.scalar;
+                                }
+                                else
+                                {
+                                    value *= dataModifier.scalar;
+                                    value += dataModifier.offset;
+                                }
+                            }
+
+                            if (chk_time.Checked)
+                            {
+                                var e = new DataGridViewCellValueEventArgs(1, (int)b);
+                                dataGridView1_CellValueNeeded(dataGridView1, e);
+
+                                XDate time = new XDate(DateTime.Parse(e.Value.ToString()));
+
+                                list1.Add(time, value);
                             }
                             else
                             {
-                                value *= dataModifier.scalar;
-                                value += dataModifier.offset;
+                                list1.Add(b, value);
                             }
-                        }
-
-                        if (chk_time.Checked)
-                        {
-                            var e = new DataGridViewCellValueEventArgs(1, (int) b);
-                            dataGridView1_CellValueNeeded(dataGridView1, e);
-
-                            XDate time = new XDate(DateTime.Parse(e.Value.ToString()));
-
-                            list1.Add(time, value);
-                        }
-                        else
-                        {
-                            list1.Add(b, value);
                         }
                     }
                     catch
