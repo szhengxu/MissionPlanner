@@ -227,6 +227,7 @@ namespace MissionPlanner
             if (!MainV2.comPort.BaseStream.IsOpen && !MainV2.comPort.logreadmode)
                 return;
 
+            /*
             if (MainV2.comPort.MAV.cs.data10[0] == 1 &&
                 MainV2.comPort.MAV.cs.data11[0] == 1 &&
                 MainV2.comPort.MAV.cs.data12[0] == 1 &&
@@ -306,35 +307,44 @@ namespace MissionPlanner
                 }
                 Array.Copy(pips_now, 0, pips_last, 0, 1024);
             }
+            */
 
-            /*
             if (MainV2.comPort.MAV.cs.f1024 == 1)
             {
                 //test
                 MainV2.comPort.MAV.cs.f1024 = 0;
                 rx_count++;
-                textBox1.AppendText(rx_count + "   " + System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.pips) + "\r\n");
-
+                //textBox1.AppendText(rx_count + ".RX:" + System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.pips_last) + "\r\n");
+                textBox1.AppendText(rx_count + ".RX:" + MainV2.comPort.MAV.cs.pips_last.Length + " data ");
+                textBox1.AppendText("\r\n");
                 //wirte log
                 if (sw != null && sw.BaseStream.CanWrite)
                 {
                     //time__rx_count__1024个数据
                     for (int i = 0; i < 1024; i++)
                     {
-                        sw.WriteLine(string.Format("{0},{1},{2}",DateTime.Now.ToString(),rx_count,MainV2.comPort.MAV.cs.pips[i]));
+                        sw.WriteLine(string.Format("{0},{1},{2}",DateTime.Now.ToString(),rx_count,MainV2.comPort.MAV.cs.pips_last[i]));
                     }
                 }
 
                 //plot
                 double time = (Environment.TickCount - tickStart) / 1000.0;
-                //list1.Add(time, MissionPlanner.MainV2.comPort.MAV.cs.ax);
                 for (int i = 0; i < 1024; i++)
                 {
-                    list_now.Add(i, MissionPlanner.MainV2.comPort.MAV.cs.pips[i]);
+                    list_now.Add(i, MissionPlanner.MainV2.comPort.MAV.cs.pips_last[i]);
                     list_last.Add(i, pips_last[i]);
                 }
-                Array.Copy(MissionPlanner.MainV2.comPort.MAV.cs.pips, 0, pips_last, 0, 1024);
-            }*/
+                Array.Copy(MissionPlanner.MainV2.comPort.MAV.cs.pips_last, 0, pips_last, 0, 1024);
+                update_plot = true;
+            }
+
+            if (MainV2.comPort.MAV.cs.cmd96 == 1)
+            {
+                MainV2.comPort.MAV.cs.cmd96 = 0;
+                rx_count++;
+                textBox1.AppendText(rx_count + ".RX:" + System.Text.Encoding.ASCII.GetString(MainV2.comPort.MAV.cs.cmd_callback));
+                textBox1.AppendText("\r\n");
+            }
         }
 
         private void myButton2_Click(object sender, EventArgs e)
