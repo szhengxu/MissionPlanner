@@ -56,6 +56,18 @@ namespace MissionPlanner
             return input/multiplierspeed;
         }
 
+        [DisplayText("F1024")]
+        public int f1024 = 0;
+
+        [DisplayText("cmd96")]
+        public int cmd96 = 0;
+
+        [DisplayText("last_count")]
+        public int last_count = 0;
+
+        [DisplayText("last_cmd_count")]
+        public int last_cmd_count = 0;
+
         // orientation - rads
         [DisplayText("Roll (deg)")]
         public float roll { get; set; }
@@ -258,6 +270,13 @@ namespace MissionPlanner
         // accel
         [DisplayText("Accel X")]
         public float ax { get; set; }
+
+        // accel
+        [DisplayText("DATA 1024")]
+        //public byte[] pips { get; set; }
+        public byte[] pips_now     = new byte[1024];
+        public byte[] pips_last    = new byte[1024];
+        public byte[] cmd_callback = new byte[96];
 
         [DisplayText("Accel Y")]
         public float ay { get; set; }
@@ -1533,7 +1552,7 @@ namespace MissionPlanner
         {
             lock (this)
             {
-                if (DateTime.Now > lastupdate.AddMilliseconds(50) || updatenow) // 20 hz
+                if (DateTime.Now > lastupdate.AddMilliseconds(4) || updatenow) // 250 hz
                 {
                     lastupdate = DateTime.Now;
 
@@ -2549,6 +2568,46 @@ namespace MissionPlanner
 
                         //MAVLink.packets[(byte)MAVLink.MSG_NAMES.RAW_IMU);
                     }
+
+                    //UESTC Start
+                    mavLinkMessage = MAV.getPacket((uint)MAVLink.MAVLINK_MSG_ID.DATA96);
+                    if (mavLinkMessage != null)
+                    {
+                        var data96 = mavLinkMessage.ToStructure<MAVLink.mavlink_data96_t>();
+
+                        int count = data96.type - 10;
+                        if (data96.type >=10 && data96.type <20)
+                        {
+                            for (int i = 0; i < 96; i++)
+                            {
+                                pips_now[i + count * 96] = data96.data[i];
+                            }
+                            f1024 = 0;
+                        }
+                        else if(data96.type == 20)
+                        {
+                            for (int i = 0; i < 64; i++)
+                            {
+                                pips_now[i + count * 96] = data96.data[i];
+                            }
+
+                            if (last_count != data96.data[80])
+                            {
+                                last_count = data96.data[80];
+                                Array.Copy(pips_now, 0, pips_last, 0, 1024);
+                                f1024 = 1;
+                            }
+                        }
+
+                        if (data96.type == 1 && last_cmd_count != data96.data[80] && cmd96 ==0)
+                        {
+                            Array.Copy(data96.data, 0, cmd_callback, 0, data96.len);
+                            cmd96 = 1;
+                            last_cmd_count = data96.data[80];
+                        }
+                        
+                    }
+                    //UESTC End
 
                     mavLinkMessage = MAV.getPacket((uint) MAVLink.MAVLINK_MSG_ID.SCALED_IMU);
                     if (mavLinkMessage != null)

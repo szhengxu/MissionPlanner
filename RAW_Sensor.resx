@@ -112,30 +112,265 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
   </metadata>
-  <metadata name="timer2serial.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timer2serial.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>301, 17</value>
   </metadata>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="horizontalProgressBar17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 36</value>
+  </data>
+  <data name="horizontalProgressBar17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 170</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="horizontalProgressBar17.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;horizontalProgressBar17.Name" xml:space="preserve">
+    <value>horizontalProgressBar17</value>
+  </data>
+  <data name="&gt;&gt;horizontalProgressBar17.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;horizontalProgressBar17.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;horizontalProgressBar17.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="verticalProgressBar7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 263</value>
+  </data>
+  <data name="verticalProgressBar7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 170</value>
+  </data>
+  <data name="verticalProgressBar7.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar7.Name" xml:space="preserve">
+    <value>verticalProgressBar7</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar7.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar7.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="verticalProgressBar6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 263</value>
+  </data>
+  <data name="verticalProgressBar6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 170</value>
+  </data>
+  <data name="verticalProgressBar6.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar6.Name" xml:space="preserve">
+    <value>verticalProgressBar6</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar6.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar6.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="verticalProgressBar5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 263</value>
+  </data>
+  <data name="verticalProgressBar5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 170</value>
+  </data>
+  <data name="verticalProgressBar5.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar5.Name" xml:space="preserve">
+    <value>verticalProgressBar5</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar5.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar5.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="verticalProgressBar4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 263</value>
+  </data>
+  <data name="verticalProgressBar4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 170</value>
+  </data>
+  <data name="verticalProgressBar4.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar4.Name" xml:space="preserve">
+    <value>verticalProgressBar4</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar4.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar4.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="progressBar2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 36</value>
+  </data>
+  <data name="progressBar2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 170</value>
+  </data>
+  <data name="progressBar2.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;progressBar2.Name" xml:space="preserve">
+    <value>progressBar2</value>
+  </data>
+  <data name="&gt;&gt;progressBar2.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;progressBar2.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;progressBar2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 36</value>
+  </data>
+  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 170</value>
+  </data>
+  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
+    <value>progressBar1</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="verticalProgressBar3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 36</value>
+  </data>
+  <data name="verticalProgressBar3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 170</value>
+  </data>
+  <data name="verticalProgressBar3.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar3.Name" xml:space="preserve">
+    <value>verticalProgressBar3</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar3.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar3.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="verticalProgressBar2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 36</value>
+  </data>
+  <data name="verticalProgressBar2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 170</value>
+  </data>
+  <data name="verticalProgressBar2.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar2.Name" xml:space="preserve">
+    <value>verticalProgressBar2</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar2.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar2.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="verticalProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>283, 36</value>
+  </data>
+  <data name="verticalProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 170</value>
+  </data>
+  <data name="verticalProgressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar1.Name" xml:space="preserve">
+    <value>verticalProgressBar1</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar1.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar1.Parent" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;verticalProgressBar1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tabOrientation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabOrientation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabOrientation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>751, 478</value>
+  </data>
+  <data name="tabOrientation.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabOrientation.Text" xml:space="preserve">
+    <value>Flight Data</value>
+  </data>
+  <data name="&gt;&gt;tabOrientation.Name" xml:space="preserve">
+    <value>tabOrientation</value>
+  </data>
+  <data name="&gt;&gt;tabOrientation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>469, 14</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 13</value>
+    <value>95, 12</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -147,7 +382,7 @@
     <value>label2</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>tabRadio</value>
@@ -158,11 +393,14 @@
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>211, 14</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
+    <value>53, 12</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -174,13 +412,16 @@
     <value>label1</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="horizontalProgressBar9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar9.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 415</value>
@@ -195,13 +436,16 @@
     <value>horizontalProgressBar9</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar9.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar9.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar9.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="horizontalProgressBar10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar10.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 360</value>
@@ -216,13 +460,16 @@
     <value>horizontalProgressBar10</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar10.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar10.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar10.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="horizontalProgressBar11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar11.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 305</value>
@@ -237,13 +484,16 @@
     <value>horizontalProgressBar11</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar11.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar11.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar11.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="horizontalProgressBar12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar12.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 250</value>
@@ -258,13 +508,16 @@
     <value>horizontalProgressBar12</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar12.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar12.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar12.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="horizontalProgressBar13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar13.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 195</value>
@@ -279,13 +532,16 @@
     <value>horizontalProgressBar13</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar13.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar13.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar13.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="horizontalProgressBar14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar14.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 140</value>
@@ -300,13 +556,16 @@
     <value>horizontalProgressBar14</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar14.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar14.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar14.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="horizontalProgressBar15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar15.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 30</value>
@@ -321,13 +580,16 @@
     <value>horizontalProgressBar15</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar15.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar15.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar15.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="horizontalProgressBar16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar16.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 85</value>
@@ -342,13 +604,16 @@
     <value>horizontalProgressBar16</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar16.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar16.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar16.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="horizontalProgressBar8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar8.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 415</value>
@@ -363,13 +628,16 @@
     <value>horizontalProgressBar8</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar8.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar8.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar8.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="horizontalProgressBar7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar7.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 360</value>
@@ -384,13 +652,16 @@
     <value>horizontalProgressBar7</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar7.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar7.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="horizontalProgressBar6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar6.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 305</value>
@@ -405,13 +676,16 @@
     <value>horizontalProgressBar6</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar6.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar6.ZOrder" xml:space="preserve">
     <value>12</value>
+  </data>
+  <data name="horizontalProgressBar5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar5.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 250</value>
@@ -426,13 +700,16 @@
     <value>horizontalProgressBar5</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar5.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar5.ZOrder" xml:space="preserve">
     <value>13</value>
+  </data>
+  <data name="horizontalProgressBar4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar4.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 195</value>
@@ -447,13 +724,16 @@
     <value>horizontalProgressBar4</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar4.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar4.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="horizontalProgressBar3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar3.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 140</value>
@@ -468,13 +748,16 @@
     <value>horizontalProgressBar3</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar3.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar3.ZOrder" xml:space="preserve">
     <value>15</value>
+  </data>
+  <data name="horizontalProgressBar2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar2.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 30</value>
@@ -489,13 +772,16 @@
     <value>horizontalProgressBar2</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar2.Parent" xml:space="preserve">
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar2.ZOrder" xml:space="preserve">
     <value>16</value>
+  </data>
+  <data name="horizontalProgressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="horizontalProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 85</value>
@@ -510,7 +796,7 @@
     <value>horizontalProgressBar1</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;horizontalProgressBar1.Parent" xml:space="preserve">
     <value>tabRadio</value>
@@ -534,13 +820,16 @@
     <value>tabRadio</value>
   </data>
   <data name="&gt;&gt;tabRadio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabRadio.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
   <data name="&gt;&gt;tabRadio.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="BUT_savecsv.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="BUT_savecsv.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 68</value>
@@ -558,7 +847,7 @@
     <value>BUT_savecsv</value>
   </data>
   <data name="&gt;&gt;BUT_savecsv.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_savecsv.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -569,11 +858,14 @@
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 143</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 39</value>
+    <value>143, 36</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -587,7 +879,7 @@ when viewing via Xbee
     <value>label3</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -608,7 +900,7 @@ when viewing via Xbee
     <value>651, 154</value>
   </data>
   <data name="CMB_rawupdaterate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 21</value>
+    <value>94, 20</value>
   </data>
   <data name="CMB_rawupdaterate.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -620,7 +912,7 @@ when viewing via Xbee
     <value>CMB_rawupdaterate</value>
   </data>
   <data name="&gt;&gt;CMB_rawupdaterate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CMB_rawupdaterate.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -628,7 +920,6 @@ when viewing via Xbee
   <data name="&gt;&gt;CMB_rawupdaterate.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="aGauge1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -645,7 +936,7 @@ when viewing via Xbee
     <value>aGauge1</value>
   </data>
   <data name="&gt;&gt;aGauge1.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aGauge1.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -659,11 +950,14 @@ when viewing via Xbee
   <data name="chkax.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 16</value>
+    <value>682, 16</value>
   </data>
   <data name="chkax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 17</value>
+    <value>66, 16</value>
   </data>
   <data name="chkax.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -675,7 +969,7 @@ when viewing via Xbee
     <value>chkax</value>
   </data>
   <data name="&gt;&gt;chkax.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkax.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -689,11 +983,14 @@ when viewing via Xbee
   <data name="chkay.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 39</value>
+    <value>682, 39</value>
   </data>
   <data name="chkay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 17</value>
+    <value>66, 16</value>
   </data>
   <data name="chkay.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -705,7 +1002,7 @@ when viewing via Xbee
     <value>chkay</value>
   </data>
   <data name="&gt;&gt;chkay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkay.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -719,11 +1016,14 @@ when viewing via Xbee
   <data name="chkaz.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkaz.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkaz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 62</value>
+    <value>682, 62</value>
   </data>
   <data name="chkaz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 17</value>
+    <value>66, 16</value>
   </data>
   <data name="chkaz.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -735,7 +1035,7 @@ when viewing via Xbee
     <value>chkaz</value>
   </data>
   <data name="&gt;&gt;chkaz.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkaz.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -749,11 +1049,14 @@ when viewing via Xbee
   <data name="chkgx.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkgx.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkgx.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 85</value>
+    <value>683, 85</value>
   </data>
   <data name="chkgx.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 17</value>
+    <value>60, 16</value>
   </data>
   <data name="chkgx.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -765,7 +1068,7 @@ when viewing via Xbee
     <value>chkgx</value>
   </data>
   <data name="&gt;&gt;chkgx.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkgx.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -779,11 +1082,14 @@ when viewing via Xbee
   <data name="chkgy.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkgy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkgy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 108</value>
+    <value>683, 108</value>
   </data>
   <data name="chkgy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 17</value>
+    <value>60, 16</value>
   </data>
   <data name="chkgy.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -795,7 +1101,7 @@ when viewing via Xbee
     <value>chkgy</value>
   </data>
   <data name="&gt;&gt;chkgy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkgy.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -809,11 +1115,14 @@ when viewing via Xbee
   <data name="chkgz.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkgz.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkgz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 131</value>
+    <value>683, 131</value>
   </data>
   <data name="chkgz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 17</value>
+    <value>60, 16</value>
   </data>
   <data name="chkgz.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -825,7 +1134,7 @@ when viewing via Xbee
     <value>chkgz</value>
   </data>
   <data name="&gt;&gt;chkgz.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkgz.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -849,7 +1158,7 @@ when viewing via Xbee
     <value>zg1</value>
   </data>
   <data name="&gt;&gt;zg1.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.33053, Culture=neutral, PublicKeyToken=null</value>
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.18207, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;zg1.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -873,7 +1182,7 @@ when viewing via Xbee
     <value>Gpitch</value>
   </data>
   <data name="&gt;&gt;Gpitch.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Gpitch.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -897,7 +1206,7 @@ when viewing via Xbee
     <value>Groll</value>
   </data>
   <data name="&gt;&gt;Groll.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Groll.Parent" xml:space="preserve">
     <value>tabRawSensor</value>
@@ -924,244 +1233,13 @@ when viewing via Xbee
     <value>tabRawSensor</value>
   </data>
   <data name="&gt;&gt;tabRawSensor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabRawSensor.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
   <data name="&gt;&gt;tabRawSensor.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="horizontalProgressBar17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>553, 36</value>
-  </data>
-  <data name="horizontalProgressBar17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 170</value>
-  </data>
-  <data name="horizontalProgressBar17.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;horizontalProgressBar17.Name" xml:space="preserve">
-    <value>horizontalProgressBar17</value>
-  </data>
-  <data name="&gt;&gt;horizontalProgressBar17.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;horizontalProgressBar17.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;horizontalProgressBar17.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="verticalProgressBar7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 263</value>
-  </data>
-  <data name="verticalProgressBar7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 170</value>
-  </data>
-  <data name="verticalProgressBar7.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar7.Name" xml:space="preserve">
-    <value>verticalProgressBar7</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar7.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar7.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="verticalProgressBar6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 263</value>
-  </data>
-  <data name="verticalProgressBar6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 170</value>
-  </data>
-  <data name="verticalProgressBar6.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar6.Name" xml:space="preserve">
-    <value>verticalProgressBar6</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar6.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar6.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="verticalProgressBar5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 263</value>
-  </data>
-  <data name="verticalProgressBar5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 170</value>
-  </data>
-  <data name="verticalProgressBar5.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar5.Name" xml:space="preserve">
-    <value>verticalProgressBar5</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar5.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="verticalProgressBar4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 263</value>
-  </data>
-  <data name="verticalProgressBar4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 170</value>
-  </data>
-  <data name="verticalProgressBar4.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar4.Name" xml:space="preserve">
-    <value>verticalProgressBar4</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar4.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="progressBar2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 36</value>
-  </data>
-  <data name="progressBar2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 170</value>
-  </data>
-  <data name="progressBar2.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;progressBar2.Name" xml:space="preserve">
-    <value>progressBar2</value>
-  </data>
-  <data name="&gt;&gt;progressBar2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;progressBar2.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;progressBar2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 36</value>
-  </data>
-  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 170</value>
-  </data>
-  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
-    <value>progressBar1</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="verticalProgressBar3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 36</value>
-  </data>
-  <data name="verticalProgressBar3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 170</value>
-  </data>
-  <data name="verticalProgressBar3.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar3.Name" xml:space="preserve">
-    <value>verticalProgressBar3</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar3.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="verticalProgressBar2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 36</value>
-  </data>
-  <data name="verticalProgressBar2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 170</value>
-  </data>
-  <data name="verticalProgressBar2.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar2.Name" xml:space="preserve">
-    <value>verticalProgressBar2</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar2.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="verticalProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 36</value>
-  </data>
-  <data name="verticalProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 170</value>
-  </data>
-  <data name="verticalProgressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar1.Name" xml:space="preserve">
-    <value>verticalProgressBar1</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar1.Parent" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;verticalProgressBar1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="tabOrientation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabOrientation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabOrientation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>751, 478</value>
-  </data>
-  <data name="tabOrientation.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabOrientation.Text" xml:space="preserve">
-    <value>Flight Data</value>
-  </data>
-  <data name="&gt;&gt;tabOrientation.Name" xml:space="preserve">
-    <value>tabOrientation</value>
-  </data>
-  <data name="&gt;&gt;tabOrientation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tabControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -1179,7 +1257,7 @@ when viewing via Xbee
     <value>tabControl</value>
   </data>
   <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1187,15 +1265,12 @@ when viewing via Xbee
   <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>46</value>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>66</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>759, 501</value>
   </data>
@@ -1282,24 +1357,24 @@ when viewing via Xbee
     <value>timer1</value>
   </data>
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;currentStateBindingSource.Name" xml:space="preserve">
     <value>currentStateBindingSource</value>
   </data>
   <data name="&gt;&gt;currentStateBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;timer2serial.Name" xml:space="preserve">
     <value>timer2serial</value>
   </data>
   <data name="&gt;&gt;timer2serial.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>RAW_Sensor</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
