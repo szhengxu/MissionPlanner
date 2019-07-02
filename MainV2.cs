@@ -4017,5 +4017,10 @@ namespace MissionPlanner
                 }
             }
         }
+
+        private void User_Login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
