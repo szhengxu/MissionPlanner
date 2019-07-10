@@ -352,6 +352,7 @@
     <Compile Include="GCSViews\Help.cs"> <SubType>Control</SubType> </Compile>
     <Compile Include="GCSViews\InitialSetup.cs"> <SubType>Control</SubType> </Compile>
     <Compile Include="GCSViews\SoftwareConfig.cs"> <SubType>Control</SubType> </Compile>
+    <Compile Include="GCSViews\User_Login.cs"> <SubType>Control</SubType> </Compile>
     <Compile Include="GCSViews\Terminal.cs"> <SubType>Control</SubType> </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.cs"> <SubType>Control</SubType> </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigAC_Fence.cs"> <SubType>Control</SubType> </Compile>
@@ -554,6 +555,7 @@
     <Compile Include="GCSViews\Help.Designer.cs"><DependentUpon>Help.cs</DependentUpon> </Compile>
     <Compile Include="GCSViews\InitialSetup.Designer.cs"><DependentUpon>InitialSetup.cs</DependentUpon> </Compile>
     <Compile Include="GCSViews\SoftwareConfig.Designer.cs"><DependentUpon>SoftwareConfig.cs</DependentUpon> </Compile>
+    <Compile Include="GCSViews\User_Login.Designer.cs"><DependentUpon>User_Login.cs</DependentUpon> </Compile>
     <Compile Include="GCSViews\Terminal.Designer.cs"><DependentUpon>Terminal.cs</DependentUpon> </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.Designer.cs"><DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon> </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigAC_Fence.Designer.cs"><DependentUpon>ConfigAC_Fence.cs</DependentUpon> </Compile>
@@ -949,6 +951,7 @@
     <EmbeddedResource Include="GCSViews\InitialSetup.zh-Hant.resx"><DependentUpon>InitialSetup.cs</DependentUpon> </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\InitialSetup.zh-TW.resx"><DependentUpon>InitialSetup.cs</DependentUpon> </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\SoftwareConfig.resx"><DependentUpon>SoftwareConfig.cs</DependentUpon> </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\User_Login.resx"><DependentUpon>User_Login.cs</DependentUpon> </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Terminal.resx"><DependentUpon>Terminal.cs</DependentUpon> </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Terminal.ar.resx"><DependentUpon>Terminal.cs</DependentUpon> </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Terminal.az-Latn-AZ.resx"><DependentUpon>Terminal.cs</DependentUpon> </EmbeddedResource>

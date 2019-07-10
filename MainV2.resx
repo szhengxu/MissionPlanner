@@ -167,10 +167,10 @@
   <data name="MainMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="User_Login.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="menu_User_Login.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 60</value>
   </data>
-  <data name="User_Login.Text" xml:space="preserve">
+  <data name="menu_User_Login.Text" xml:space="preserve">
     <value>User_Login</value>
   </data>
   <data name="MenuFlightData.Font" type="System.Drawing.Font, System.Drawing">
@@ -735,7 +735,7 @@
     <value>Ctrl+N</value>
   </data>
   <data name="新建NToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>165, 22</value>
   </data>
   <data name="新建NToolStripMenuItem.Text" xml:space="preserve">
     <value>新建(&amp;N)</value>
@@ -763,13 +763,13 @@
     <value>Ctrl+O</value>
   </data>
   <data name="打开OToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>165, 22</value>
   </data>
   <data name="打开OToolStripMenuItem.Text" xml:space="preserve">
     <value>打开(&amp;O)</value>
   </data>
   <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 6</value>
+    <value>162, 6</value>
   </data>
   <data name="保存SToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -794,19 +794,19 @@
     <value>Ctrl+S</value>
   </data>
   <data name="保存SToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>165, 22</value>
   </data>
   <data name="保存SToolStripMenuItem.Text" xml:space="preserve">
     <value>保存(&amp;S)</value>
   </data>
   <data name="另存为AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>165, 22</value>
   </data>
   <data name="另存为AToolStripMenuItem.Text" xml:space="preserve">
     <value>另存为(&amp;A)</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 6</value>
+    <value>162, 6</value>
   </data>
   <data name="打印PToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -830,7 +830,7 @@
     <value>Ctrl+P</value>
   </data>
   <data name="打印PToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>165, 22</value>
   </data>
   <data name="打印PToolStripMenuItem.Text" xml:space="preserve">
     <value>打印(&amp;P)</value>
@@ -852,16 +852,16 @@
     <value>Magenta</value>
   </data>
   <data name="打印预览VToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>165, 22</value>
   </data>
   <data name="打印预览VToolStripMenuItem.Text" xml:space="preserve">
     <value>打印预览(&amp;V)</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 6</value>
+    <value>162, 6</value>
   </data>
   <data name="退出XToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>165, 22</value>
   </data>
   <data name="退出XToolStripMenuItem.Text" xml:space="preserve">
     <value>退出(&amp;X)</value>
@@ -876,7 +876,7 @@
     <value>Ctrl+Z</value>
   </data>
   <data name="撤消UToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>161, 22</value>
   </data>
   <data name="撤消UToolStripMenuItem.Text" xml:space="preserve">
     <value>撤消(&amp;U)</value>
@@ -885,13 +885,13 @@
     <value>Ctrl+Y</value>
   </data>
   <data name="重复RToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>161, 22</value>
   </data>
   <data name="重复RToolStripMenuItem.Text" xml:space="preserve">
     <value>重复(&amp;R)</value>
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 6</value>
+    <value>158, 6</value>
   </data>
   <data name="剪切TToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -913,7 +913,7 @@
     <value>Ctrl+X</value>
   </data>
   <data name="剪切TToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>161, 22</value>
   </data>
   <data name="剪切TToolStripMenuItem.Text" xml:space="preserve">
     <value>剪切(&amp;T)</value>
@@ -939,7 +939,7 @@
     <value>Ctrl+C</value>
   </data>
   <data name="复制CToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>161, 22</value>
   </data>
   <data name="复制CToolStripMenuItem.Text" xml:space="preserve">
     <value>复制(&amp;C)</value>
@@ -967,16 +967,16 @@
     <value>Ctrl+V</value>
   </data>
   <data name="粘贴PToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>161, 22</value>
   </data>
   <data name="粘贴PToolStripMenuItem.Text" xml:space="preserve">
     <value>粘贴(&amp;P)</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 6</value>
+    <value>158, 6</value>
   </data>
   <data name="全选AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>161, 22</value>
   </data>
   <data name="全选AToolStripMenuItem.Text" xml:space="preserve">
     <value>全选(&amp;A)</value>
@@ -988,13 +988,13 @@
     <value>编辑(&amp;E)</value>
   </data>
   <data name="自定义CToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>180, 22</value>
   </data>
   <data name="自定义CToolStripMenuItem.Text" xml:space="preserve">
     <value>自定义(&amp;C)</value>
   </data>
   <data name="选项OToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>180, 22</value>
   </data>
   <data name="选项OToolStripMenuItem.Text" xml:space="preserve">
     <value>选项(&amp;O)</value>
@@ -1006,28 +1006,28 @@
     <value>工具(&amp;T)</value>
   </data>
   <data name="内容CToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>180, 22</value>
   </data>
   <data name="内容CToolStripMenuItem.Text" xml:space="preserve">
     <value>内容(&amp;C)</value>
   </data>
   <data name="索引IToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>180, 22</value>
   </data>
   <data name="索引IToolStripMenuItem.Text" xml:space="preserve">
     <value>索引(&amp;I)</value>
   </data>
   <data name="搜索SToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>180, 22</value>
   </data>
   <data name="搜索SToolStripMenuItem.Text" xml:space="preserve">
     <value>搜索(&amp;S)</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="关于AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>180, 22</value>
   </data>
   <data name="关于AToolStripMenuItem.Text" xml:space="preserve">
     <value>关于(&amp;A)...</value>
@@ -2823,6 +2823,12 @@
   <data name="&gt;&gt;connectionListToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;menu_User_Login.Name" xml:space="preserve">
+    <value>menu_User_Login</value>
+  </data>
+  <data name="&gt;&gt;menu_User_Login.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;MenuFlightData.Name" xml:space="preserve">
     <value>MenuFlightData</value>
   </data>
@@ -3061,12 +3067,6 @@
     <value>关于AToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;关于AToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;User_Login.Name" xml:space="preserve">
-    <value>User_Login</value>
-  </data>
-  <data name="&gt;&gt;User_Login.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
