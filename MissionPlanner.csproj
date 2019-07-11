@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
-    <ApplicationIcon>mpdesktop.ico</ApplicationIcon>
+    <ApplicationIcon>mpdesktop_uestc.ico</ApplicationIcon>
     <OutputType>Exe</OutputType>
     <StartupObject></StartupObject>
     <Authors>Michael Oborne</Authors>
@@ -1894,6 +1894,7 @@
     <Content Include="mpdesktop44.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="mpdesktop_uestc.ico" />
     <Content Include="ParameterFactMetaData.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
