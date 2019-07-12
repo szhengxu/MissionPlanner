@@ -67,10 +67,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 652);
+            this.textBox1.Location = new System.Drawing.Point(0, 785);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1506, 214);
+            this.textBox1.Size = new System.Drawing.Size(1506, 81);
             this.textBox1.TabIndex = 38;
             // 
             // BUT_savecsv2
@@ -100,7 +100,7 @@
             this.zg2.ScrollMinX = 0D;
             this.zg2.ScrollMinY = 0D;
             this.zg2.ScrollMinY2 = 0D;
-            this.zg2.Size = new System.Drawing.Size(754, 580);
+            this.zg2.Size = new System.Drawing.Size(754, 709);
             this.zg2.TabIndex = 47;
             // 
             // timer1
@@ -126,7 +126,7 @@
             this.zg3.ScrollMinX = 0D;
             this.zg3.ScrollMinY = 0D;
             this.zg3.ScrollMinY2 = 0D;
-            this.zg3.Size = new System.Drawing.Size(753, 580);
+            this.zg3.Size = new System.Drawing.Size(753, 709);
             this.zg3.TabIndex = 49;
             // 
             // myButton1

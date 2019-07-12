@@ -5,6 +5,7 @@ namespace MissionPlanner
 {
     partial class MainV2
     {
+       public static bool passed = false;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -168,8 +169,9 @@ namespace MissionPlanner
             // menu_User_Login
             // 
             this.menu_User_Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.menu_User_Login.Name = "menu_User_Login";
+            this.menu_User_Login.Image = global::MissionPlanner.Properties.Resources.donate;
             resources.ApplyResources(this.menu_User_Login, "menu_User_Login");
+            this.menu_User_Login.Name = "menu_User_Login";
             this.menu_User_Login.Click += new System.EventHandler(this.User_Login_Click);
             // 
             // MenuFlightData

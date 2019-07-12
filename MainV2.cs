@@ -404,7 +404,7 @@ namespace MissionPlanner
         /// </summary>
         public GCSViews.FlightData FlightData;
 
-        public GCSViews.User_Login User_Login;
+        public GCSViews.User_Login User_Login = new GCSViews.User_Login();
 
         public GCSViews.FlightPlanner FlightPlanner;
         Controls.SITL Simulation;
@@ -544,7 +544,7 @@ namespace MissionPlanner
             //    MainV2.instance.FlightPlanner.updateDisplayView();
             //}
         }
-        
+
 
         public MainV2()
         {
@@ -782,6 +782,8 @@ namespace MissionPlanner
 
             try
             {
+                //log.Info("Create UL");
+                //User_Login = new GCSViews.User_Login();
                 log.Info("Create FD");
                 FlightData = new GCSViews.FlightData();
                 log.Info("Create FP");
@@ -1273,27 +1275,41 @@ namespace MissionPlanner
             _connectionControl.CMB_serialport.Items.Add("UDPCl");
         }
 
+        private void User_Login_Click(object sender, EventArgs e)
+        {
+            MyView.ShowScreen("User_Login");
+        }
+
         private void MenuFlightData_Click(object sender, EventArgs e)
         {
-            MyView.ShowScreen("FlightData");
+            if (passed == true)
+            { 
+                MyView.ShowScreen("FlightData");
+            }
         }
 
         private void MenuFlightPlanner_Click(object sender, EventArgs e)
         {
-            MyView.ShowScreen("FlightPlanner");
+            if (passed == true)
+            {
+                MyView.ShowScreen("FlightPlanner");
+            }
         }
 
         public void MenuSetup_Click(object sender, EventArgs e)
         {
-            if (Settings.Instance.GetBoolean("password_protect") == false)
+            if (passed == true)
             {
-                MyView.ShowScreen("HWConfig");
-            }
-            else
-            {
-                if (Password.VerifyPassword())
+                if (Settings.Instance.GetBoolean("password_protect") == false)
                 {
                     MyView.ShowScreen("HWConfig");
+                }
+                else
+                {
+                    if (Password.VerifyPassword())
+                    {
+                        MyView.ShowScreen("HWConfig");
+                    }
                 }
             }
         }
@@ -1305,15 +1321,18 @@ namespace MissionPlanner
 
         private void MenuTuning_Click(object sender, EventArgs e)
         {
-            if (Settings.Instance.GetBoolean("password_protect") == false)
+            if (passed == true)
             {
-                MyView.ShowScreen("SWConfig");
-            }
-            else
-            {
-                if (Password.VerifyPassword())
+                if (Settings.Instance.GetBoolean("password_protect") == false)
                 {
                     MyView.ShowScreen("SWConfig");
+                }
+                else
+                {
+                    if (Password.VerifyPassword())
+                    {
+                        MyView.ShowScreen("SWConfig");
+                    }
                 }
             }
         }
@@ -1725,7 +1744,10 @@ namespace MissionPlanner
 
         private void MenuConnect_Click(object sender, EventArgs e)
         {
-            Connect();
+            if (passed == true)
+            {
+                Connect();
+            }
         }
 
         private void Connect()
@@ -2856,10 +2878,16 @@ namespace MissionPlanner
             }
             else
             {
+                //this.PerformLayout();
+                //log.Info("show FlightData");
+                //MenuFlightData_Click(this, e);
+                //log.Info("show FlightData... Done");
+                //MainMenu_ItemClicked(this, new ToolStripItemClickedEventArgs(MenuFlightData));
+
                 this.PerformLayout();
-                log.Info("show FlightData");
-                MenuFlightData_Click(this, e);
-                log.Info("show FlightData... Done");
+                log.Info("show Login_Click");
+                User_Login_Click(this, e);
+                log.Info("show Login_Click... Done");
                 MainMenu_ItemClicked(this, new ToolStripItemClickedEventArgs(MenuFlightData));
             }
 
@@ -4023,11 +4051,6 @@ namespace MissionPlanner
                     });
                 }
             }
-        }
-
-        private void User_Login_Click(object sender, EventArgs e)
-        {
-            MyView.ShowScreen("User_Login");
         }
 
         private void MainV2_Load(object sender, EventArgs e)
