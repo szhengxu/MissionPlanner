@@ -86,7 +86,7 @@
             this.MinimumSize = new System.Drawing.Size(600, 375);
             this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UESTC Mission Planner";
+            this.Text = "UESTC GCS";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

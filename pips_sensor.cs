@@ -543,5 +543,10 @@ namespace MissionPlanner
             data96.len = count;
             MainV2.comPort.send_data96(data96);
         }
+
+        private void zg2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

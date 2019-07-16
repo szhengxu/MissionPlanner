@@ -67,16 +67,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 785);
+            this.textBox1.Location = new System.Drawing.Point(874, 22);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1506, 81);
+            this.textBox1.Size = new System.Drawing.Size(347, 73);
             this.textBox1.TabIndex = 38;
             // 
             // BUT_savecsv2
             // 
             this.BUT_savecsv2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BUT_savecsv2.Location = new System.Drawing.Point(1422, 30);
+            this.BUT_savecsv2.Location = new System.Drawing.Point(724, 68);
             this.BUT_savecsv2.Name = "BUT_savecsv2";
             this.BUT_savecsv2.Size = new System.Drawing.Size(84, 24);
             this.BUT_savecsv2.TabIndex = 48;
@@ -91,7 +91,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.zg2.AutoSize = true;
             this.zg2.BackColor = System.Drawing.Color.Transparent;
-            this.zg2.Location = new System.Drawing.Point(0, 70);
+            this.zg2.Location = new System.Drawing.Point(0, 101);
             this.zg2.Name = "zg2";
             this.zg2.ScrollGrace = 0D;
             this.zg2.ScrollMaxX = 0D;
@@ -100,8 +100,9 @@
             this.zg2.ScrollMinX = 0D;
             this.zg2.ScrollMinY = 0D;
             this.zg2.ScrollMinY2 = 0D;
-            this.zg2.Size = new System.Drawing.Size(754, 709);
+            this.zg2.Size = new System.Drawing.Size(694, 547);
             this.zg2.TabIndex = 47;
+            this.zg2.Load += new System.EventHandler(this.zg2_Load);
             // 
             // timer1
             // 
@@ -117,7 +118,7 @@
             // 
             this.zg3.AutoSize = true;
             this.zg3.BackColor = System.Drawing.Color.Transparent;
-            this.zg3.Location = new System.Drawing.Point(753, 70);
+            this.zg3.Location = new System.Drawing.Point(668, 101);
             this.zg3.Name = "zg3";
             this.zg3.ScrollGrace = 0D;
             this.zg3.ScrollMaxX = 0D;
@@ -126,13 +127,13 @@
             this.zg3.ScrollMinX = 0D;
             this.zg3.ScrollMinY = 0D;
             this.zg3.ScrollMinY2 = 0D;
-            this.zg3.Size = new System.Drawing.Size(753, 709);
+            this.zg3.Size = new System.Drawing.Size(673, 547);
             this.zg3.TabIndex = 49;
             // 
             // myButton1
             // 
             this.myButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton1.Location = new System.Drawing.Point(186, 6);
+            this.myButton1.Location = new System.Drawing.Point(480, 36);
             this.myButton1.Name = "myButton1";
             this.myButton1.Size = new System.Drawing.Size(84, 24);
             this.myButton1.TabIndex = 50;
@@ -154,7 +155,7 @@
             // myButton3
             // 
             this.myButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton3.Location = new System.Drawing.Point(96, 6);
+            this.myButton3.Location = new System.Drawing.Point(6, 36);
             this.myButton3.Name = "myButton3";
             this.myButton3.Size = new System.Drawing.Size(84, 24);
             this.myButton3.TabIndex = 52;
@@ -165,7 +166,7 @@
             // myButton5
             // 
             this.myButton5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton5.Location = new System.Drawing.Point(1163, 7);
+            this.myButton5.Location = new System.Drawing.Point(604, 8);
             this.myButton5.Name = "myButton5";
             this.myButton5.Size = new System.Drawing.Size(84, 24);
             this.myButton5.TabIndex = 54;
@@ -176,7 +177,7 @@
             // myButton6
             // 
             this.myButton6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton6.Location = new System.Drawing.Point(347, 6);
+            this.myButton6.Location = new System.Drawing.Point(174, 6);
             this.myButton6.Name = "myButton6";
             this.myButton6.Size = new System.Drawing.Size(84, 24);
             this.myButton6.TabIndex = 55;
@@ -187,7 +188,7 @@
             // myButton7
             // 
             this.myButton7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton7.Location = new System.Drawing.Point(508, 7);
+            this.myButton7.Location = new System.Drawing.Point(174, 36);
             this.myButton7.Name = "myButton7";
             this.myButton7.Size = new System.Drawing.Size(84, 24);
             this.myButton7.TabIndex = 56;
@@ -198,7 +199,7 @@
             // myButton8
             // 
             this.myButton8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton8.Location = new System.Drawing.Point(720, 7);
+            this.myButton8.Location = new System.Drawing.Point(390, 6);
             this.myButton8.Name = "myButton8";
             this.myButton8.Size = new System.Drawing.Size(84, 24);
             this.myButton8.TabIndex = 57;
@@ -209,7 +210,7 @@
             // myButton9
             // 
             this.myButton9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton9.Location = new System.Drawing.Point(939, 7);
+            this.myButton9.Location = new System.Drawing.Point(390, 36);
             this.myButton9.Name = "myButton9";
             this.myButton9.Size = new System.Drawing.Size(84, 24);
             this.myButton9.TabIndex = 58;
@@ -220,7 +221,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox3.Location = new System.Drawing.Point(437, 6);
+            this.textBox3.Location = new System.Drawing.Point(103, 35);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(65, 24);
@@ -229,7 +230,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox2.Location = new System.Drawing.Point(276, 6);
+            this.textBox2.Location = new System.Drawing.Point(103, 7);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(65, 24);
@@ -244,9 +245,9 @@
             this.comboBox1.Items.AddRange(new object[] {
             "正常采集模式",
             "debug模式"});
-            this.comboBox1.Location = new System.Drawing.Point(598, 7);
+            this.comboBox1.Location = new System.Drawing.Point(264, 6);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(116, 24);
+            this.comboBox1.Size = new System.Drawing.Size(120, 24);
             this.comboBox1.TabIndex = 62;
             // 
             // comboBox2
@@ -258,7 +259,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "脉冲幅度谱模式",
             "单个脉冲模式"});
-            this.comboBox2.Location = new System.Drawing.Point(810, 7);
+            this.comboBox2.Location = new System.Drawing.Point(264, 35);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(120, 24);
             this.comboBox2.TabIndex = 63;
@@ -272,7 +273,7 @@
             this.comboBox3.Items.AddRange(new object[] {
             "反符合模式",
             "符合模式"});
-            this.comboBox3.Location = new System.Drawing.Point(1038, 7);
+            this.comboBox3.Location = new System.Drawing.Point(480, 5);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(118, 24);
             this.comboBox3.TabIndex = 64;
@@ -280,7 +281,7 @@
             // myButton4
             // 
             this.myButton4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton4.Location = new System.Drawing.Point(1269, 23);
+            this.myButton4.Location = new System.Drawing.Point(724, 22);
             this.myButton4.Name = "myButton4";
             this.myButton4.Size = new System.Drawing.Size(69, 40);
             this.myButton4.TabIndex = 65;
@@ -291,7 +292,7 @@
             // myButton10
             // 
             this.myButton10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton10.Location = new System.Drawing.Point(1344, 23);
+            this.myButton10.Location = new System.Drawing.Point(799, 22);
             this.myButton10.Name = "myButton10";
             this.myButton10.Size = new System.Drawing.Size(69, 40);
             this.myButton10.TabIndex = 66;
@@ -302,7 +303,7 @@
             // myButton11
             // 
             this.myButton11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton11.Location = new System.Drawing.Point(366, 6);
+            this.myButton11.Location = new System.Drawing.Point(207, 36);
             this.myButton11.Name = "myButton11";
             this.myButton11.Size = new System.Drawing.Size(84, 24);
             this.myButton11.TabIndex = 67;
@@ -324,7 +325,7 @@
             // myButton13
             // 
             this.myButton13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton13.Location = new System.Drawing.Point(96, 6);
+            this.myButton13.Location = new System.Drawing.Point(6, 36);
             this.myButton13.Name = "myButton13";
             this.myButton13.Size = new System.Drawing.Size(84, 24);
             this.myButton13.TabIndex = 69;
@@ -359,7 +360,7 @@
             "9.0",
             "9.5",
             "10"});
-            this.comboBox4.Location = new System.Drawing.Point(456, 6);
+            this.comboBox4.Location = new System.Drawing.Point(207, 6);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(65, 24);
             this.comboBox4.TabIndex = 70;
@@ -367,7 +368,7 @@
             // myButton14
             // 
             this.myButton14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton14.Location = new System.Drawing.Point(527, 7);
+            this.myButton14.Location = new System.Drawing.Point(278, 6);
             this.myButton14.Name = "myButton14";
             this.myButton14.Size = new System.Drawing.Size(84, 24);
             this.myButton14.TabIndex = 71;
@@ -378,7 +379,7 @@
             // myButton15
             // 
             this.myButton15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton15.Location = new System.Drawing.Point(186, 6);
+            this.myButton15.Location = new System.Drawing.Point(109, 6);
             this.myButton15.Name = "myButton15";
             this.myButton15.Size = new System.Drawing.Size(84, 24);
             this.myButton15.TabIndex = 72;
@@ -389,7 +390,7 @@
             // myButton16
             // 
             this.myButton16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton16.Location = new System.Drawing.Point(276, 6);
+            this.myButton16.Location = new System.Drawing.Point(109, 36);
             this.myButton16.Name = "myButton16";
             this.myButton16.Size = new System.Drawing.Size(84, 24);
             this.myButton16.TabIndex = 73;
@@ -404,7 +405,7 @@
             this.tabControl1.Location = new System.Drawing.Point(2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1261, 66);
+            this.tabControl1.Size = new System.Drawing.Size(720, 97);
             this.tabControl1.TabIndex = 74;
             // 
             // tabPage1
@@ -425,7 +426,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1253, 40);
+            this.tabPage1.Size = new System.Drawing.Size(712, 71);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "PIPS多通道探测器";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -442,7 +443,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1253, 40);
+            this.tabPage2.Size = new System.Drawing.Size(1253, 71);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "气体流量探测系统";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -451,12 +452,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1504, 866);
+            this.ClientSize = new System.Drawing.Size(1344, 649);
+            this.Controls.Add(this.zg2);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.myButton10);
             this.Controls.Add(this.myButton4);
             this.Controls.Add(this.BUT_savecsv2);
-            this.Controls.Add(this.zg2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.zg3);
             this.Name = "pips_sensor";

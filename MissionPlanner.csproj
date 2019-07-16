@@ -19,7 +19,7 @@
     <EnableDefaultItems>false</EnableDefaultItems>
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyName>MissionPlanner</AssemblyName>
+    <AssemblyName>UESTC_GCS</AssemblyName>
     <RootNamespace>MissionPlanner</RootNamespace>
  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
