@@ -132,7 +132,7 @@ namespace MissionPlanner.Utilities
             displayPluginAutoWp = true;
 
             //initial setup
-            displayInstallFirmware = false;
+            displayInstallFirmware = true;
             displayWizard = false;
             displayFrameType = false;
             displayAccelCalibration = true;
@@ -240,7 +240,7 @@ namespace MissionPlanner.Utilities
                 displayPluginAutoWp = true,
 
                 //initial setup
-                displayInstallFirmware = false,
+                displayInstallFirmware = true,
                 displayWizard = false,
                 displayFrameType = false,
                 displayAccelCalibration = true,
@@ -318,7 +318,7 @@ namespace MissionPlanner.Utilities
                 displayPluginAutoWp = true,
 
                 //initial setup
-                displayInstallFirmware = false,
+                displayInstallFirmware = true,
                 displayWizard = false,
                 displayFrameType = false,
                 displayAccelCalibration = true,
